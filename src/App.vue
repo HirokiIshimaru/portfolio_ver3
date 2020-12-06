@@ -33,9 +33,6 @@ body{
     font-weight: 200;
     color: #fff;
     text-decoration: none;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
   }
 }
 </style>
