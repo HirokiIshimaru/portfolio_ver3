@@ -1,11 +1,15 @@
 <template>
   <div class="wrapper">
-    <header class="header">
-      <div class="header__ttl">
-        <img src="@/assets/ttl.png" alt="タイトル">
-      </div>  <!-- header__ttl -->
-      <h2 class="header__subttl">田舎の農業高校からWebエンジニアへ</h2>
-    </header> <!-- header__subttl -->
+    
+    <div class="main-visual">
+      <div class="main-visual__wrapper">
+        <div class="main-visual__ttl">
+          <img src="@/assets/ttl.svg" alt="タイトル">
+        </div>  <!-- main-visual__ttl -->
+        <h2 class="main-visual__subttl">田舎の農業高校からWebエンジニアへ</h2>
+      </div>
+    </div> <!-- main-visual__subttl -->
+
     <main>
       <div class="about">
         <h2 class="nav_ttl"></h2>
@@ -34,9 +38,58 @@
 </script>
 
 <style lang="scss" scoped>
+
+
 $fontColor: #fff;
 
 h2, p, a{
   color: $fontColor;
-}
+  text-decoration: none;
+  }
+  .main-visual {
+    font-weight: 300;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("~@/assets/header_bg.jpg");
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 0;
+    &__wrapper {
+      width: 80%;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    &__ttl {
+      margin: 30px 0 30px 0;
+      letter-spacing: 0.04em;
+      width: 500px;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    &__subttl {
+      font-weight: 200;
+      letter-spacing: 0.08em;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top :0;
+      left: 0;
+      right :0;
+      bottom:0;
+      z-index: 1;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(0,0,0,0.9), transparent);
+    }
+  }
+
+
 </style>
