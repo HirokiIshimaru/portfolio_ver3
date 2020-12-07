@@ -1,73 +1,82 @@
-<svg id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" width="288.28mm" height="115.56mm" viewBox="0 0 817.17 327.58">
+<svg id="svg-logo" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" width="288.28mm" height="115.56mm" viewBox="0 0 817.17 327.58">
   <defs>
     <style>
       .wrap_all path {
-        <!-- fill: transparent; -->
+        fill: transparent;
         stroke: #fff;
         stroke-width: 2px;
       }
 
       .wrap_all .txt_01 {
-        animation: txt_d_01 10s ease-in both ,endAnimation 1s 7s ease-in both;
+        animation: txt_d_01 5s ease-in both,
+        endAnimation 1s ease-in both;
+        animation-delay: 2.5s;
       }
       .wrap_all .txt_02 {
-        animation: txt_d_02 10s ease-in both ,endAnimation 1s 7s ease-in both;
+        animation: txt_d_02 5s ease-in both,
+        endAnimation 1s ease-in both;
+        animation-delay: 2.5s;
       }
       .wrap_all .txt_03 {
-        animation: txt_d_03 10s ease-in both ,endAnimation 1s 7s ease-in both;
-        <!-- stroke-dasharray: 480px; -->
+        animation: txt_d_03 5s ease-in both,
+        endAnimation 1s ease-in both;
+        animation-delay: 2.5s;
       }
       .wrap_all .txt_04 {
-        animation: txt_d_04 10s ease-in both ,endAnimation 1s 7s ease-in both;
-        
+        animation: txt_d_04 5s ease-in both,
+        endAnimation 1s ease-in both;
+        animation-delay: 2.5s;  
       }
       .wrap_all .txt_05 {
-        animation: txt_d_05 10s ease-in both ,endAnimation 1s 7s ease-in both;
+        animation: txt_d_05 5s ease-in both,
+        endAnimation 1s ease-in both;
+        animation-delay: 2.5s;
       }
       .wrap_all .txt_06 {
-        animation: txt_d_06 10s ease-in both ,endAnimation 1s 7s ease-in both;
-        <!-- stroke-dasharray: 300px; -->
+        animation: txt_d_06 5s ease-in both,
+        endAnimation 1s ease-in both;
+        animation-delay: 2.5s;
       }
 
       .wrap_all .txt_07 {
-        animation: txt_d_07 10s ease-in both ,endAnimation 1s 7s ease-in both;
+        animation: txt_d_07 5s ease-in both,
+        endAnimation 1s ease-in both;
+        animation-delay: 2.5s;
       }
       .wrap_all .txt_08 {
-        animation: txt_d_08 10s ease-in both ,endAnimation 1s 7s ease-in both;
+        animation: txt_d_08 5s ease-in both,
+        endAnimation 1s ease-in both;
+        animation-delay: 2.5s;
       }
       .wrap_all .txt_09 {
-        animation: txt_d_09 10s ease-in both ,endAnimation 1s 7s ease-in both;
+        animation: txt_d_09 5s ease-in both,
+        endAnimation 1s ease-in both;
+        animation-delay: 2.5s;
       }
       .wrap_all .txt_10 {
-        animation: txt_d_10 10s ease-in both ,endAnimation 1s 7s ease-in both;
-        
+        animation: txt_d_10 5s ease-in both,
+        endAnimation 1s ease-in both;
+        animation-delay: 2.5s;
       }
       .wrap_all .txt_11 {
-        animation: txt_d_11 10s ease-in both,endAnimation 1s 7s ease-in both ;
-        <!-- stroke-dasharray: 1000px; -->
+        animation: txt_d_11 5s ease-in both,
+        endAnimation 1s ease-in both;
+        animation-delay: 2.5s;
       }
       .wrap_all .txt_12 {
-        animation: txt_d_12 10s ease-in both,endAnimation 1s 7s ease-in both ;
-        <!-- stroke-dasharray: 500px; -->
+        animation: txt_d_12 5s ease-in both,
+        endAnimation 1s ease-in both;
+        animation-delay: 2.5s;
       }
       .wrap_all .txt_13 {
-        animation: txt_d_13 10s ease-in both,endAnimation 1s 7s ease-in both ;
-        
+        animation: txt_d_13 5s ease-in both,
+        endAnimation 1s ease-in both;
+        animation-delay: 2.5s; 
       }
       .wrap_all .txt_14 {
-        animation: txt_d_14 10s ease-in both,endAnimation 1s 7s ease-in both ;
-        
-      }
-      
-       
-
-      @keyframes endAnimation {
-        0% {
-          fill: transparent;
-        }
-        100% {
-          fill: #fff;
-        }
+        animation: txt_d_14 5s ease-in both,
+        endAnimation 1s ease-in both;
+        animation-delay: 2.5s;
       }
 
   
@@ -252,6 +261,15 @@
         }
         63%{
         stroke-dashoffset: 0;
+        }
+      }
+
+      @keyframes endAnimation {
+        0% {
+          fill: transparent;
+        }
+        100% {
+          fill: #fff;
         }
       }
 

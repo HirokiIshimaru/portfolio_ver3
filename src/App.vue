@@ -33,6 +33,17 @@ body{
     font-weight: 200;
     color: #fff;
     text-decoration: none;
+    &:after{
+      width: 0;
+      content: '';
+      border-bottom: solid 1.5px #fff;
+      transition: ease 0.3s all;
+      display: block;
+    }
+    &:hover::after{
+      width: 100%;
+      border-bottom: solid 1.5px #fff;
+    }
   }
 }
 </style>
