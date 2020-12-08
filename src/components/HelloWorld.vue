@@ -6,7 +6,9 @@
         <div class="main-visual__ttl" id="logo">
           <img src="@/assets/ttl.svg" alt="タイトル">
         </div>  <!-- main-visual__ttl -->
-        <h2 class="main-visual__subttl" id="sub-ttl">田舎の農業高校からWebエンジニアへ</h2>
+        <transition name="sub-ttl">
+          <h2 class="main-visual__subttl" id="sub-ttl">田舎の農業高校からWebエンジニアへ</h2>
+        </transition>
       </div>
     </div> <!-- main-visual__subttl -->
 
@@ -35,34 +37,34 @@
 </template>
 
 <script>
-export default {
-  methods: {
-    window:onload = () =>{
-      const mainVisual = document.getElementById('main-visual');
-      const logo = document.getElementById('logo');
-      const subTtl = document.getElementById('sub-ttl');
-      console.log(mainVisual, logo, subTtl);
-      subTtl.style.opacity = '0';
-      subTtl.style.transform = 'translateY(30px)';
-      mainVisualAnimation();
+// export default {
+//   methods: {
+//     window:onload = () =>{
+//       const mainVisual = document.getElementById('main-visual');
+//       const logo = document.getElementById('logo');
+//       const subTtl = document.getElementById('sub-ttl');
+//       console.log(mainVisual, logo, subTtl);
+//       subTtl.style.opacity = '0';
+//       subTtl.style.transform = 'translateY(30px)';
+//       mainVisualAnimation();
 
-      function mainVisualAnimation(){
-        logo.style.visibility = 'hidden';
-        subTtl.style.opacity = '0';
-        subTtl.style.transform = 'translateY(30px)';
-        subTtl.style.transition = "ease 0.5s all";
+//       function mainVisualAnimation(){
+//         logo.style.visibility = 'hidden';
+//         subTtl.style.opacity = '0';
+//         subTtl.style.transform = 'translateY(30px)';
+//         subTtl.style.transition = "ease 0.5s all";
         
-        mainVisual.addEventListener('animationend', ()=>{
-          logo.style.visibility = 'visible';
-          setTimeout(() => {
-            subTtl.style.opacity = '1';
-            subTtl.style.transform = 'translateY(0px)';
-          }, 7800);
-        })
-      }
-    }
-  }
-}
+//         mainVisual.addEventListener('animationend', ()=>{
+//           logo.style.visibility = 'visible';
+//           setTimeout(() => {
+//             subTtl.style.opacity = '1';
+//             subTtl.style.transform = 'translateY(0px)';
+//           }, 7800);
+//         })
+//       }
+//     }
+//   }
+// }
 </script>
 
 <style lang="scss" scoped>
@@ -80,7 +82,6 @@ h2, p, a{
   font-weight: 300;
   width: 100vw;
   height: 100vh;
-  background-image: url("~@/assets/header_bg.jpg");
   background-size: cover;
   background-position: center top;
   position: relative;
@@ -89,15 +90,14 @@ h2, p, a{
   z-index: 0;
   overflow: hidden;
   position: relative;
-  animation: viewMainVisual ease 2.5s;
+  animation: viewMainVisual ease 2.5s forwards;
   @keyframes viewMainVisual {
-    0%{
-      background-image: url("~@/assets/header_bg.jpg");
-      filter: blur(10px);
+    0%{ 
+      filter: blur(20px);
       opacity: 0;
     }
     100%{
-      background-image: url("~@/assets/header_bg.jpg");
+      background-image: url("~@/assets/header_bg.jpg");  
       filter: blur(0px);
       opacity: 1;
     }
@@ -120,8 +120,20 @@ h2, p, a{
   &__subttl {
     letter-spacing: 0.08em;
     font-family: $jpFont;
-    transform: translateY('30px');
     opacity: 0;
+    transform: translateY(30px);
+    animation: showSubttl ease 0.5s forwards;
+    animation-delay: 5s;
+    @keyframes showSubttl {
+      0%{
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100%{
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
   }
   &::before {
     content: "";
@@ -137,6 +149,4 @@ h2, p, a{
     background: linear-gradient(to right, rgba(0,0,0,0.9), transparent);
   }
 }
-
-
 </style>
