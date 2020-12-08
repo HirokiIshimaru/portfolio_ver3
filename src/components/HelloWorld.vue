@@ -4,10 +4,12 @@
     <div class="main-visual" id="main-visual">
       <div class="main-visual__wrapper">
         <div class="main-visual__ttl" id="logo">
-          <img src="@/assets/ttl.svg" alt="タイトル">
+          <img src="@/assets/ttl.svg" alt="ロゴ">
         </div>  <!-- main-visual__ttl -->
         <transition name="sub-ttl">
-          <h2 class="main-visual__subttl" id="sub-ttl">田舎の農業高校からWebエンジニアへ</h2>
+          <h2 class="main-visual__subttl" id="sub-ttl">
+            <img src="@/assets/subttl.svg" alt="サブタイトル">
+          </h2>
         </transition>
       </div>
     </div> <!-- main-visual__subttl -->
@@ -88,12 +90,10 @@ h2, p, a{
     }
   }
   &__subttl {
-    letter-spacing: 0.08em;
-    font-family: $jpFont;
+    width: 33%;
     opacity: 0;
-    transform: translateY(30px);
     animation: showSubttl ease 0.5s forwards;
-    animation-delay: 5s;
+    animation-delay: 10s;
     @keyframes showSubttl {
       0%{
         opacity: 0;
@@ -101,7 +101,7 @@ h2, p, a{
       }
       100%{
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(10px);
       }
     }
   }
