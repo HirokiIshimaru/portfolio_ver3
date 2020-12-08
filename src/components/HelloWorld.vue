@@ -107,7 +107,6 @@ h2, p, a{
   }
   &::before {
     content: "";
-    color: white;
     position: absolute;
     top :0;
     left: 0;
