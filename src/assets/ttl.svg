@@ -21,7 +21,7 @@
       }
       .wrap_all .txt_04 {
         animation: txt_d_04 7s ease-in both;
-        animation-delay: 2.5s;  
+        animation-delay: 2.5s;
       }
       .wrap_all .txt_05 {
         animation: txt_d_05 7s ease-in both;

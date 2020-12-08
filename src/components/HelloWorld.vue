@@ -41,16 +41,21 @@ export default {
       const mainVisual = document.getElementById('main-visual');
       const logo = document.getElementById('logo');
       const subTtl = document.getElementById('sub-ttl');
-      const svgLogo = document.getElementById('svg-logo');
-      const svgAnimation = document.getElementsByClassName('wrap_all')
-      console.log(mainVisual, logo, subTtl, svgAnimation);
+      console.log(mainVisual, logo, subTtl);
+      subTtl.style.opacity = '0';
+      subTtl.style.transform = 'translateY(30px)';
       mainVisualAnimation();
 
       async function mainVisualAnimation(){
         logo.style.visibility = 'hidden';
+        subTtl.style.transition = "ease 0.5s all";
+        
         mainVisual.addEventListener('animationend', ()=>{
-          console.log("アニメーション終了", svgLogo);
           logo.style.visibility = 'visible';
+          setTimeout(() => {
+            subTtl.style.opacity = '1';
+            subTtl.style.transform = 'translateY(0px)';
+          }, 8500);
         })
       }
     }
@@ -59,6 +64,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&family=Noto+Serif+TC:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+$jpFont: 'Noto Sans JP', sans-serif;
+$enFont: 'Noto Serif TC','Noto Serif JP', serif;
 $fontColor: #fff;
 
 h2, p, a{
@@ -78,7 +87,7 @@ h2, p, a{
   z-index: 0;
   overflow: hidden;
   position: relative;
-  animation: viewMainVisual ease 2s;
+  animation: viewMainVisual ease 2.5s;
   @keyframes viewMainVisual {
     0%{
       background-image: url("~@/assets/header_bg.jpg");
@@ -107,8 +116,8 @@ h2, p, a{
     }
   }
   &__subttl {
-    font-weight: 200;
     letter-spacing: 0.08em;
+    font-family: $jpFont;
   }
   &::before {
     content: "";
