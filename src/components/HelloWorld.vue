@@ -46,8 +46,10 @@ export default {
       subTtl.style.transform = 'translateY(30px)';
       mainVisualAnimation();
 
-      async function mainVisualAnimation(){
+      function mainVisualAnimation(){
         logo.style.visibility = 'hidden';
+        subTtl.style.opacity = '0';
+        subTtl.style.transform = 'translateY(30px)';
         subTtl.style.transition = "ease 0.5s all";
         
         mainVisual.addEventListener('animationend', ()=>{
@@ -55,7 +57,7 @@ export default {
           setTimeout(() => {
             subTtl.style.opacity = '1';
             subTtl.style.transform = 'translateY(0px)';
-          }, 8500);
+          }, 7800);
         })
       }
     }
@@ -118,6 +120,8 @@ h2, p, a{
   &__subttl {
     letter-spacing: 0.08em;
     font-family: $jpFont;
+    transform: translateY('30px');
+    opacity: 0;
   }
   &::before {
     content: "";
