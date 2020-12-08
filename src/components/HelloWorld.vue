@@ -36,36 +36,6 @@
   </div>  <!-- wrapper -->
 </template>
 
-<script>
-// export default {
-//   methods: {
-//     window:onload = () =>{
-//       const mainVisual = document.getElementById('main-visual');
-//       const logo = document.getElementById('logo');
-//       const subTtl = document.getElementById('sub-ttl');
-//       console.log(mainVisual, logo, subTtl);
-//       subTtl.style.opacity = '0';
-//       subTtl.style.transform = 'translateY(30px)';
-//       mainVisualAnimation();
-
-//       function mainVisualAnimation(){
-//         logo.style.visibility = 'hidden';
-//         subTtl.style.opacity = '0';
-//         subTtl.style.transform = 'translateY(30px)';
-//         subTtl.style.transition = "ease 0.5s all";
-        
-//         mainVisual.addEventListener('animationend', ()=>{
-//           logo.style.visibility = 'visible';
-//           setTimeout(() => {
-//             subTtl.style.opacity = '1';
-//             subTtl.style.transform = 'translateY(0px)';
-//           }, 7800);
-//         })
-//       }
-//     }
-//   }
-// }
-</script>
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&family=Noto+Serif+TC:wght@200;400;700&display=swap');
