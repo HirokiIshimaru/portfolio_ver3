@@ -45,25 +45,30 @@
         </div>  <!-- about__wrapper -->
       </div>  <!-- about -->
 
-      <div class="Works">
+      <div class="works">
         <h2 class="nav-ttl">Works</h2>
         <div class="works__wrapper">
           <div class="works__wrapper__leftbox">
             <h3 class="works__wrapper__leftbox__heading">2019</h3>
-            <ul class="works__wrapper__leftbox__year-list">
-              <li>
-                <button>2019</button>                
-              </li>
-              <li>
-                <button>2020</button>
-              </li>
-              <li>
-                <button>2021</button>
-              </li>
-              <li>
-                <button>勉強集</button>
-              </li>
-            </ul> <!-- works__wrapper__leftbox__year-list -->
+            <div class="works__wrapper__leftbox__select-year">
+              <div class="works__wrapper__leftbox__select-year__select-area">
+                <div class="works__wrapper__leftbox__select-year__select-area__select-bar"></div>
+              </div>
+              <ul class="works__wrapper__leftbox__select-year__year-list">
+                <li>
+                  <button>2019</button>                
+                </li>
+                <li>
+                  <button>2020</button>
+                </li>
+                <li>
+                  <button>2021</button>
+                </li>
+                <li>
+                  <button>トレーニング</button>
+                </li>
+              </ul> <!-- works__wrapper__leftbox__year-list -->
+            </div> <!-- works__wrapper__leftbox__select-year -->
           </div> <!-- works__wrapper__leftbox -->
           <div class="works__wrapper__rightbox">
 
@@ -74,7 +79,9 @@
       <div class="contact">
         <h2 class="nav-ttl">Contact</h2>
         <p class="contact__message">お気軽にご連絡ください。お待ちしております。</p>
-        <a href="mailto:hirokiishimaru6132@gmail.com" class="contact__mail">hirokiishimaru6132@gmail.com</a>
+        <div class="contact__mail">
+          <a href="mailto:hirokiishimaru6132@gmail.com">hirokiishimaru6132@gmail.com</a>
+        </div>
         <p class="contact__copywrite"><small>&copy;2020 hirokiishimaru</small></p>
       </div> <!-- contact -->
     </main> <!-- main -->
@@ -90,7 +97,7 @@ $jpFont: 'Noto Sans JP', sans-serif;
 $enFont: 'Noto Serif TC','Noto Serif JP', serif;
 $fontColor: #fff;
 
-h1,h2,h3, p, a, li{
+h1,h2,h3, p, a, li, button{
   color: $fontColor;
   text-decoration: none;
 }
