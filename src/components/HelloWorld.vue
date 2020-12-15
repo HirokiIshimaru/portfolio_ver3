@@ -21,16 +21,26 @@
           <div class="about__wrapper__wrap">
             <div class="about__wrapper__wrap__leftbox">
               <img src="@/assets/about_my_img.png" alt="">
-              <p>Platform ・ SNS</p>
-              <a href="#" class="about__wrapper__wrap__leftbox__github">
-                <img src="@/assets/Github_icon-icons.com_67091.png" alt="">
-                <p>to Github</p>
+              <h3 class="about__wrapper__wrap__leftbox__platform">Platform ・ SNS</h3>
+              <a href="https://github.com/HirokiIshimaru?tab=repositories" target="_blank" rel="noopener" class="about__wrapper__wrap__leftbox__github">
+                <img src="@/assets/github.svg" alt="">
+                <span>to Github</span>
               </a> <!-- about__wrapper__wrap__leftbox__github -->
-              <a href="#" class="about__wrapper__wrap__leftbox__wantedly">
-                <img src="@/assets/mark_visit.png" alt="">
-                <p>to Wantedly</p>
+              <a href="https://www.wantedly.com/id/hirokiishimaru" target="_blank" rel="noopener" class="about__wrapper__wrap__leftbox__wantedly">
+                <img src="@/assets/mark_visit.svg" alt="">
+                <span>to Wantedly</span>
               </a>  <!-- about__wrapper__wrap__leftbox__wantedly -->
             </div>  <!-- about__wrapper__wrap__leftbox -->
+            <div class="about__wrapper__wrap__rightbox">
+              <h3 class="about__wrapper__wrap__rightbox__name">HIROKI ISHIMARU</h3>
+              <p>ECCコンピュータ専門学校 Webデザインコース 22年卒</p>
+              <p>フロントエンドエンジニア志望</p>
+              <p class="about__wrapper__wrap__rightbox__trigger"><img src="@/assets/trigger.svg" alt="web業界を目指したきっかけ"></p>
+              <p>高校時代は農業について調べることが多く、<br>
+              その際に様々なWebサイトを見て興味を持ち、<br>
+              将来はWebに携わりたいと思い、<br>
+              Web業界に足を踏み入れました。</p>
+            </div>
           </div>  <!-- about__wrapper__wrap -->
         </div>  <!-- about__wrapper -->
       </div>  <!-- about -->
@@ -63,10 +73,9 @@
 
       <div class="contact">
         <h2 class="nav-ttl">Contact</h2>
-        <p>お気軽にご連絡ください。お待ちしております。</p>
-        <span></span>
-        <a href="mailto:hirokiishimaru6132@gmail.com">hirokiishimaru6132@gmail.com</a>
-        <span></span>
+        <p class="contact__message">お気軽にご連絡ください。お待ちしております。</p>
+        <a href="mailto:hirokiishimaru6132@gmail.com" class="contact__mail">hirokiishimaru6132@gmail.com</a>
+        <p class="contact__copywrite"><small>&copy;2020 hirokiishimaru</small></p>
       </div> <!-- contact -->
     </main> <!-- main -->
   </div>  <!-- wrapper -->
