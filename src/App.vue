@@ -13,6 +13,7 @@
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&family=Noto+Serif+TC:wght@200;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+@import '@/sass/ress.scss';
 $jpFont: 'Noto Sans JP', sans-serif;
 $enFont: 'Noto Serif TC','Noto Serif JP', serif;
 

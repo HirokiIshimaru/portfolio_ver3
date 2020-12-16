@@ -1,0 +1,40 @@
+.works{
+    display: flex;
+    &__img{
+        margin-right: 50px;
+    }
+    &__content{
+        &__ttl{
+            font-size: 20px;
+        }
+        &__catch-copy{
+            width: 350px;
+            font-size: 25px;
+            margin: 25px 0;
+        }
+        &__skill{
+            &__icon{
+                width: 60px;
+                font-size: 15px;
+                font-weight: bold;
+                text-align: center;
+                padding: 5px 0;
+                margin-bottom: 10px;
+                border: solid 2px #fff;
+            }
+        }
+        &__link{
+            display: flex;
+            margin-top: 20px;
+            &__btn{
+                display: block;
+                width: 150px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                border: solid 1px #707070;
+                margin-right: 20px;
+            }
+        }
+    }
+}

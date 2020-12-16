@@ -6,11 +6,9 @@
         <div class="main-visual__ttl" id="logo">
           <img src="@/assets/ttl.svg" alt="ロゴ">
         </div>  <!-- main-visual__ttl -->
-        <transition name="sub-ttl">
-          <h2 class="main-visual__subttl" id="sub-ttl">
-            <img src="@/assets/subttl.svg" alt="サブタイトル">
-          </h2>
-        </transition>
+        <h2 class="main-visual__subttl" id="sub-ttl">
+          <img src="@/assets/subttl.svg" alt="サブタイトル">
+        </h2>
       </div>
     </div> <!-- main-visual__subttl -->
 
@@ -71,7 +69,7 @@
             </div> <!-- works__wrapper__leftbox__select-year -->
           </div> <!-- works__wrapper__leftbox -->
           <div class="works__wrapper__rightbox">
-
+            <Works1st></Works1st>
           </div>
         </div> <!-- works__wrapper -->
       </div> <!-- works -->
@@ -88,6 +86,14 @@
   </div>  <!-- wrapper -->
 </template>
 
+<script>
+import Works1st from '@/components/works_1st.vue';
+export default {
+  components: {
+    Works1st
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&family=Noto+Serif+TC:wght@200;400;700&display=swap');
