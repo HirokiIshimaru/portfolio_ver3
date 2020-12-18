@@ -76,25 +76,6 @@
                 </div>
             </div>
         </div>
-        <div class="works">
-            <div class="works__img">
-                <img src="@/assets/mama.svg" alt="作品サムネイル">
-            </div>
-            <div class="works__content">
-                <p class="works__content__date">2020.02</p>
-                <p class="works__content__ttl">MAMAgement</p>
-                <h2 class="works__content__catch-copy">スマホひとつで冷蔵庫の中身からレシピまで提案してくれるサービス</h2>
-                <div class="works__content__skill">
-                    <p class="works__content__skill__icon">Skills</p>
-                    <p class="works__content__skill__list">HTML5 / CSS / PHP</p>
-                </div>
-                <div class="works__content__link">
-                    <a href="#" class="works__content__link__btn">詳細へ</a>
-                    <a href="https://github.com/HirokiIshimaru/MAMAgement" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a>
-                    <a href="http://click.ecc.ac.jp/ecc/hisimaru/works/mamas/" target="_blank" rel="noopener" class="works__content__link__btn">サイトへ</a>
-                </div>
-            </div>
-        </div>
     </div>
 </template>
 
