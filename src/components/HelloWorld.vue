@@ -54,13 +54,13 @@
               </div>
               <ul class="works__wrapper__leftbox__select-year__year-list">
                 <li>
-                  <button>2019</button>                
+                  <button>1年次</button>                
                 </li>
                 <li>
-                  <button>2020</button>
+                  <button>2年次</button>
                 </li>
                 <li>
-                  <button>2021</button>
+                  <button>3年次</button>
                 </li>
                 <li>
                   <button>トレーニング</button>

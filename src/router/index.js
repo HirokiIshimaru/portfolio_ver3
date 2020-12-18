@@ -8,7 +8,8 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {title: '石丸大貴 - ポートフォリオサイト'}
   },
   {
     path: '/about',
