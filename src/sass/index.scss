@@ -114,14 +114,13 @@ p, button{
       }
       &__github, &__wantedly{
         max-width: 200px;
-        height: 40px;
+        height: 45px;
         display: flex;
         align-items: center;
         margin: 0 auto;
-        text-align: center;
         transition: ease 0.3s;
         img{
-          height: 10vh;
+          height: 70px;
         }
         &:hover{
           opacity: 0.4;

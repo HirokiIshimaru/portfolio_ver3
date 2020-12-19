@@ -6,22 +6,25 @@
     }
     &__content{
         &__ttl{
-            font-size: 20px;
+            font-size: 16px;
         }
         &__catch-copy{
             width: 480px;
-            font-size: 25px;
+            font-size: 20px;
             margin: 25px 0;
         }
         &__skill{
             &__icon{
                 width: 60px;
-                font-size: 15px;
+                font-size: 14px;
                 font-weight: bold;
                 text-align: center;
-                padding: 5px 0;
+                padding: 3px 0;
                 margin-bottom: 10px;
                 border: solid 2px #fff;
+            }
+            &__list{
+                font-size: 14px;
             }
         }
         &__link{
