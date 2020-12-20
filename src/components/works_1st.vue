@@ -57,7 +57,7 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="works">
+        <div class="works">
             <div class="works__img">
                 <img src="@/assets/mama.svg" alt="作品サムネイル">
             </div>
@@ -75,7 +75,7 @@
                     <a href="http://click.ecc.ac.jp/ecc/hisimaru/works/mamas/" target="_blank" rel="noopener" class="works__content__link__btn">サイトへ</a>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
 </template>
 
