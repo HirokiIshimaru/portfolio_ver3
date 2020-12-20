@@ -56,15 +56,20 @@ body{
     font-weight: 200;
     color: #fff;
     text-decoration: none;
+    position: relative;
     &:after{
       width: 0;
       content: '';
       border-bottom: solid 1.5px #fff;
       transition: ease 0.3s all;
       display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
     }
     &:hover::after{
       width: 100%;
+      left: 0;
       border-bottom: solid 1.5px #fff;
     }
   }
