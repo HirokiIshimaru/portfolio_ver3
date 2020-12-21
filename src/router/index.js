@@ -12,8 +12,16 @@ const routes = [
     meta: {title: '石丸大貴 - ポートフォリオサイト'}
   },
   {
-    path: '/about',
+    path: '/#about',
     name: 'About',
+  },
+  {
+    path: '/works',
+    name: 'Works',
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
   }
 ]
 
@@ -22,9 +30,13 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
 
-  // scrollBehavior(to, from, savedPosition){
-  //   return {x: 0, y: 0}
-  // }
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
+  }
 })
 
 export default router

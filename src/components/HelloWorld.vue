@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     
-    <div class="main-visual" id="main-visual">
+    <div class="main-visual" id="home">
       <div class="main-visual__wrapper">
         <div class="main-visual__ttl" id="logo">
           <img src="@/assets/ttl.svg" alt="ロゴ">
@@ -13,7 +13,7 @@
     </div> <!-- main-visual__subttl -->
 
     <main>
-      <div class="about">
+      <div class="about" id="about">
         <h2 class="nav-ttl">About</h2>
         <div class="about__wrapper">
           <div class="about__wrapper__wrap">
@@ -43,38 +43,40 @@
         </div>  <!-- about__wrapper -->
       </div>  <!-- about -->
 
-      <div class="works">
+      <div class="works" id="works">
         <h2 class="nav-ttl">Works</h2>
         <div class="works__wrapper">
           <div class="works__wrapper__leftbox">
-            <h3 class="works__wrapper__leftbox__heading">2019</h3>
+            <h3 class="works__wrapper__leftbox__heading">{{currentTtl}}</h3>
             <div class="works__wrapper__leftbox__select-year">
               <div class="works__wrapper__leftbox__select-year__select-area">
-                <div class="works__wrapper__leftbox__select-year__select-area__select-bar"></div>
+                <div class="works__wrapper__leftbox__select-year__select-area__select-bar" id="current-bar"></div>
               </div>
               <ul class="works__wrapper__leftbox__select-year__year-list">
                 <li>
-                  <button>1年次</button>                
+                  <button @click="view1();">1年次</button>                
                 </li>
                 <li>
-                  <button>2年次</button>
+                  <button @click="view2();">2年次</button>
                 </li>
                 <li>
-                  <button>3年次</button>
+                  <button @click="view3();">3年次</button>
                 </li>
                 <li>
-                  <button>トレーニング</button>
+                  <button @click="view4();">トレーニング</button>
                 </li>
               </ul> <!-- works__wrapper__leftbox__year-list -->
             </div> <!-- works__wrapper__leftbox__select-year -->
           </div> <!-- works__wrapper__leftbox -->
           <div class="works__wrapper__rightbox">
-            <Works1st></Works1st>
+            <transition name="change-current" mode="out-in">
+              <component :is="currentView"></component>
+            </transition>
           </div>
         </div> <!-- works__wrapper -->
       </div> <!-- works -->
 
-      <div class="contact">
+      <div class="contact" id="contact">
         <h2 class="nav-ttl">Contact</h2>
         <p class="contact__message">お気軽にご連絡ください。お待ちしております。</p>
         <div class="contact__mail">
@@ -88,9 +90,51 @@
 
 <script>
 import Works1st from '@/components/works_1st.vue';
+import Works2nd from '@/components/works_2nd.vue';
+import Works3rd from '@/components/works_3rd.vue';
+import Traning from '@/components/works_traning.vue';
 export default {
   components: {
-    Works1st
+    Works1st,
+    Works2nd,
+    Works3rd,
+    Traning
+  },
+  data() {
+    return{
+      currentTtl: '1年次',
+      currentView: 'Works1st',
+    }
+  },
+  methods: {
+    view1() {
+      this.currentView = "Works1st";
+      this.currentTtl = "1年次";
+      let currentBar = document.getElementById('current-bar');
+      currentBar.style.transition = 'ease 0.3s';
+      currentBar.style.transform = 'translateY(0px)';
+    },
+    view2() {
+      this.currentView = "Works2nd";
+      this.currentTtl = "2年次";
+      let currentBar = document.getElementById('current-bar');
+      currentBar.style.transition = 'ease 0.3s';
+      currentBar.style.transform = 'translateY(100px)';
+    },
+    view3() {
+      this.currentView = "Works3rd";
+      this.currentTtl = "3年次";
+      let currentBar = document.getElementById('current-bar');
+      currentBar.style.transition = 'ease 0.3s';
+      currentBar.style.transform = 'translateY(200px)';
+    },    
+    view4() {
+      this.currentView = "Traning";
+      this.currentTtl = "トレーニング";
+      let currentBar = document.getElementById('current-bar');
+      currentBar.style.transition = 'ease 0.3s';
+      currentBar.style.transform = 'translateY(300px)';
+    },
   }
 }
 </script>
@@ -106,5 +150,13 @@ $fontColor: #fff;
 h1,h2,h3, p, a, li, button{
   color: $fontColor;
   text-decoration: none;
+}
+
+// works要素切り替えtransition
+.change-current-enter-active, .change-current-leave-active{
+  transition: opacity 0.5s ease;
+}
+.change-current-enter, .change-current-leave-to{
+  opacity: 0;
 }
 </style>
