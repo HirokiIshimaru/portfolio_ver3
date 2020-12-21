@@ -46,7 +46,7 @@
       <div class="works" id="works">
         <h2 class="nav-ttl">Works</h2>
         <div class="works__wrapper">
-          <div class="works__wrapper__leftbox">
+          <div class="works__wrapper__leftbox" id="year-nav">
             <h3 class="works__wrapper__leftbox__heading">{{currentTtl}}</h3>
             <div class="works__wrapper__leftbox__select-year">
               <div class="works__wrapper__leftbox__select-year__select-area">
@@ -70,7 +70,7 @@
           </div> <!-- works__wrapper__leftbox -->
           <div class="works__wrapper__rightbox">
             <transition name="change-current" mode="out-in">
-              <component :is="currentView"></component>
+              <component :is="currentView" id="works-component"></component>
             </transition>
           </div>
         </div> <!-- works__wrapper -->
@@ -135,6 +135,26 @@ export default {
       currentBar.style.transition = 'ease 0.3s';
       currentBar.style.transform = 'translateY(300px)';
     },
+  },
+  mounted() {
+    const worksDom = document.getElementById('works');
+    const yearNav = document.getElementById('year-nav');
+    const rect = worksDom.getBoundingClientRect();
+    // console.log(rect.top)
+    window.addEventListener('scroll', function(){
+      let scrollEl = window.scrollY;
+      if(scrollEl >= rect.bottom){
+        yearNav.style.opacity = "0";
+        yearNav.style.filter = 'blur(10px)';
+      }else if(scrollEl >= rect.top){
+        yearNav.style.opacity = "1";
+        yearNav.style.transition = "ease-out 0.3s";
+        yearNav.style.filter = 'blur(0px)';
+      }else{
+        yearNav.style.opacity = "0";
+        yearNav.style.filter = 'blur(10px)';
+      }
+    });
   }
 }
 </script>
