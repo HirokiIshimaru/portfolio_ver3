@@ -9,60 +9,60 @@
 
       .wrap_all .txt_01 {
         animation: txt_d_01 7s ease-in both;
-        animation-delay: 2.5s;
+        animation-delay: 2s;
       }
       .wrap_all .txt_02 {
         animation: txt_d_02 7s ease-in both;
-        animation-delay: 2.5s;
+        animation-delay: 2s;
       }
       .wrap_all .txt_03 {
         animation: txt_d_03 7s ease-in both;
-        animation-delay: 2.5s;
+        animation-delay: 2s;
       }
       .wrap_all .txt_04 {
         animation: txt_d_04 7s ease-in both;
-        animation-delay: 2.5s;
+        animation-delay: 2s;
       }
       .wrap_all .txt_05 {
         animation: txt_d_05 7s ease-in both;
-        animation-delay: 2.5s;
+        animation-delay: 2s;
       }
       .wrap_all .txt_06 {
         animation: txt_d_06 7s ease-in both;
-        animation-delay: 2.5s;
+        animation-delay: 2s;
       }
 
       .wrap_all .txt_07 {
         animation: txt_d_07 7s ease-in both;
-        animation-delay: 2.5s;
+        animation-delay: 2s;
       }
       .wrap_all .txt_08 {
         animation: txt_d_08 7s ease-in both;
-        animation-delay: 2.5s;
+        animation-delay: 2s;
       }
       .wrap_all .txt_09 {
         animation: txt_d_09 7s ease-in both;
-        animation-delay: 2.5s;
+        animation-delay: 2s;
       }
       .wrap_all .txt_10 {
         animation: txt_d_10 7s ease-in both;
-        animation-delay: 2.5s;
+        animation-delay: 2s;
       }
       .wrap_all .txt_11 {
         animation: txt_d_11 7s ease-in both;
-        animation-delay: 2.5s;
+        animation-delay: 2s;
       }
       .wrap_all .txt_12 {
         animation: txt_d_12 7s ease-in both;
-        animation-delay: 2.5s;
+        animation-delay: 2s;
       }
       .wrap_all .txt_13 {
         animation: txt_d_13 7s ease-in both;
-        animation-delay: 2.5s; 
+        animation-delay: 2s; 
       }
       .wrap_all .txt_14 {
         animation: txt_d_14 7s ease-in both;
-        animation-delay: 2.5s;
+        animation-delay: 2s;
       }
 
   
