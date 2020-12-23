@@ -5,7 +5,7 @@
                 <img src="@/assets/kukuhyo.svg" alt="作品サムネイル">
             </div>
             <div class="works__content">
-                <p class="works__content__date">2020.06</p>
+                <p class="works__content__date">2020.03</p>
                 <p class="works__content__ttl">九九表</p>
                 <h2 class="works__content__catch-copy">JavaScriptで九九表を作成しました</h2>
                 <div class="works__content__skill">
@@ -85,7 +85,7 @@
                     <p class="works__content__skill__list">HTML5 / SCSS / JavaScript</p>
                 </div>
                 <div class="works__content__link">
-                    <a href="https://github.com/HirokiIshimaru/tuiless_app" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a>
+                    <a href="https://github.com/HirokiIshimaru/janken-game" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a>
                     <a href="http://click.ecc.ac.jp/ecc/hisimaru/works/traning/janken%20Game/janken.html" target="_blank" rel="noopener" class="works__content__link__btn">サイトへ</a>
                 </div>
             </div>

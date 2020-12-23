@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     
-    <div class="main-visual" id="home">
+    <header class="main-visual" id="home">
       <div class="main-visual__wrapper">
         <div class="main-visual__ttl" id="logo">
           <img src="@/assets/ttl.svg" alt="ロゴ">
@@ -10,7 +10,7 @@
           <img src="@/assets/subttl.svg" alt="サブタイトル">
         </h2>
       </div>
-    </div> <!-- main-visual__subttl -->
+    </header> <!-- main-visual__subttl -->
 
     <main>
       <div class="about" id="about">
@@ -119,21 +119,21 @@ export default {
       this.currentTtl = "2年次";
       let currentBar = document.getElementById('current-bar');
       currentBar.style.transition = 'ease 0.3s';
-      currentBar.style.transform = 'translateY(100px)';
+      currentBar.style.transform = 'translateY(80px)';
     },
     view3() {
       this.currentView = "Works3rd";
       this.currentTtl = "3年次";
       let currentBar = document.getElementById('current-bar');
       currentBar.style.transition = 'ease 0.3s';
-      currentBar.style.transform = 'translateY(200px)';
+      currentBar.style.transform = 'translateY(160px)';
     },    
     view4() {
       this.currentView = "Traning";
       this.currentTtl = "トレーニング";
       let currentBar = document.getElementById('current-bar');
       currentBar.style.transition = 'ease 0.3s';
-      currentBar.style.transform = 'translateY(300px)';
+      currentBar.style.transform = 'translateY(240px)';
     },
   },
   mounted() {
@@ -148,7 +148,7 @@ export default {
         yearNav.style.filter = 'blur(10px)';
       }else if(scrollEl >= rect.top){
         yearNav.style.opacity = "1";
-        yearNav.style.transition = "ease-out 0.3s";
+        yearNav.style.transition = "ease-out 0.2s";
         yearNav.style.filter = 'blur(0px)';
       }else{
         yearNav.style.opacity = "0";

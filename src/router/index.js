@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import FysiDetail from '@/components/detail/fysi_detail.vue'
 
 Vue.use(VueRouter)
 
@@ -12,7 +13,7 @@ const routes = [
     meta: {title: '石丸大貴 - ポートフォリオサイト'}
   },
   {
-    path: '/#about',
+    path: '/about',
     name: 'About',
   },
   {
@@ -22,6 +23,11 @@ const routes = [
   {
     path: '/contact',
     name: 'Contact',
+  },
+  {
+    path: '/fysi-detail',
+    name: 'fysi-detail',
+    component: FysiDetail
   }
 ]
 

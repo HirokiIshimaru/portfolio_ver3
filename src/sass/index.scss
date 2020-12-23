@@ -165,6 +165,7 @@ p, button{
     top: 100px;
     left: -50px;
     &__heading{
+      font-family: $jpFont;
       font-size: 30px;
       margin-bottom: 100px;
     }
@@ -172,12 +173,12 @@ p, button{
       display: flex;
       justify-content: center;
       &__select-area{
-        height: 400px;
+        height: 320px;
         border-right: solid 3px #707070;
         position: relative;
         margin-left: 50px;
         &__select-bar{
-          height: 100px;
+          height: 80px;
           border-right: solid 3px #fff;
           position: absolute;
         }
@@ -185,7 +186,7 @@ p, button{
       &__year-list{
         list-style: none;
         li{
-          height: 100px;
+          height: 80px;
           display: flex;
           align-items: center;
           text-align: left;
@@ -232,6 +233,7 @@ p, button{
 // contact
 .contact{
   text-align: center;
+  margin-top: 50px;
   &__message{
     margin-bottom: 100px;
   }
@@ -271,5 +273,6 @@ p, button{
   }
   &__copywrite{
     margin-top: 200px;
+    padding: 10px;
   }
 }
