@@ -82,7 +82,7 @@
         <div class="contact__mail">
           <a href="mailto:hirokiishimaru6132@gmail.com">hirokiishimaru6132@gmail.com</a>
         </div>
-        <p class="contact__copywrite"><small>&copy;2020 hirokiishimaru</small></p>
+        <footer><p class="contact__copywrite">&copy;2020 hirokiishimaru</p></footer>
       </div> <!-- contact -->
     </main> <!-- main -->
   </div>  <!-- wrapper -->

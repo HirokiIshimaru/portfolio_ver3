@@ -41,7 +41,7 @@ body{
 }
 #nav {
   position: fixed;
-  z-index: 100;
+  z-index: 9999;
   top: 0;
   right: 0;
   margin-left: auto;
