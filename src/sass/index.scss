@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 $jpFont: 'Noto Sans JP', sans-serif;
 $enFont: 'Noto Serif TC','Noto Serif JP', serif;
-h1, h2, h3, a, span{
+h1, h2, h3, a{
   font-family: $enFont;
 }
-p, button{
+p, button, span{
   font-family: $jpFont;
 }
 // main-visual
@@ -165,9 +165,17 @@ p, button{
     top: 100px;
     left: -50px;
     &__heading{
+      height: 100px;
       font-family: $jpFont;
-      font-size: 30px;
-      margin-bottom: 100px;
+      font-size: 25px;
+      .vue-typer {
+        .custom.char {
+          color: #fff !important;
+          &.typed {
+            color: #fff !important;
+          }
+        }
+      }
     }
     &__select-year{
       display: flex;
@@ -198,7 +206,7 @@ p, button{
             outline: none;
             padding: 0;
             appearance: none;
-            font-size: 20px;
+            font-size: 18px;
             display: block;
             font-weight: 200;
             color: #fff;
