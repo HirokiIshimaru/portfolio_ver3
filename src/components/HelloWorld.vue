@@ -109,6 +109,26 @@ export default {
     }
   },
   methods: {
+    window:onload = () =>{
+      const worksDom = document.getElementById('works');
+      const yearNav = document.getElementById('year-nav');
+      let rect = worksDom.getBoundingClientRect();
+      console.log(rect.top, rect.bottom);
+      window.addEventListener('scroll', function(){
+        let scrollEl = window.scrollY;
+        if(scrollEl >= rect.bottom){
+          yearNav.style.opacity = "0";
+          yearNav.style.filter = 'blur(10px)';
+        }else if(scrollEl >= rect.top){
+          yearNav.style.opacity = "1";
+          yearNav.style.transition = "ease-out 0.2s";
+          yearNav.style.filter = 'blur(0px)';
+        }else{
+          yearNav.style.opacity = "0";
+          yearNav.style.filter = 'blur(10px)';
+        }
+      });
+    },
     view1() {
       this.currentView = "Works1st";
       this.currentTtl = "1年次";
@@ -138,25 +158,21 @@ export default {
       currentBar.style.transform = 'translateY(240px)';
     },
   },
-  mounted() {
-    const worksDom = document.getElementById('works');
-    const yearNav = document.getElementById('year-nav');
-    let rect = worksDom.getBoundingClientRect();
-    window.addEventListener('scroll', function(){
-      let scrollEl = window.scrollY;
-      if(scrollEl >= rect.bottom){
-        yearNav.style.opacity = "0";
-        yearNav.style.filter = 'blur(10px)';
-      }else if(scrollEl >= rect.top){
-        yearNav.style.opacity = "1";
-        yearNav.style.transition = "ease-out 0.2s";
-        yearNav.style.filter = 'blur(0px)';
-      }else{
-        yearNav.style.opacity = "0";
-        yearNav.style.filter = 'blur(10px)';
-      }
-    });
-  }
+  // watch:{
+  //   currentView(){
+  //     const worksDom = document.getElementById('works');
+  //     const yearNav = document.getElementById('year-nav');
+  //     let rect = worksDom.getBoundingClientRect();
+  //     console.log(rect.bottom);
+  //     window.addEventListener('scroll', function(){
+  //       let scrollEl = window.scrollY;
+  //       if(scrollEl >= rect.bottom){
+  //         yearNav.style.opacity = "0";
+  //         yearNav.style.filter = 'blur(10px)';
+  //       }
+  //     });
+  //   }
+  // }
 }
 </script>
 
