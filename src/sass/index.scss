@@ -168,13 +168,10 @@ p, button, span{
       height: 100px;
       font-family: $jpFont;
       font-size: 25px;
-      .vue-typer {
-        .custom.char {
-          color: #fff !important;
-          &.typed {
-            color: #fff !important;
-          }
-        }
+      color: #fff !important;
+      .vue-typer .custom.char {
+        color: #ffffff;
+        background-color: #ffffff;
       }
     }
     &__select-year{

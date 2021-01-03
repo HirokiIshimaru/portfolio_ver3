@@ -141,8 +141,7 @@ export default {
   mounted() {
     const worksDom = document.getElementById('works');
     const yearNav = document.getElementById('year-nav');
-    const rect = worksDom.getBoundingClientRect();
-    // console.log(rect.top)
+    let rect = worksDom.getBoundingClientRect();
     window.addEventListener('scroll', function(){
       let scrollEl = window.scrollY;
       if(scrollEl >= rect.bottom){
