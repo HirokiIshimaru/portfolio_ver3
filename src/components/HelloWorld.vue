@@ -47,7 +47,7 @@
         <h2 class="nav-ttl">Works</h2>
         <div class="works__wrapper">
           <div class="works__wrapper__leftbox" id="year-nav">
-            <h3 class="works__wrapper__leftbox__heading"><vue-typer :text="currentTtl" :repeat="0"></vue-typer></h3>
+            <h3 class="works__wrapper__leftbox__heading">{{currentTtl}}</h3>
             <div class="works__wrapper__leftbox__select-year">
               <div class="works__wrapper__leftbox__select-year__select-area">
                 <div class="works__wrapper__leftbox__select-year__select-area__select-bar" id="current-bar"></div>
@@ -93,14 +93,12 @@ import Works1st from '@/components/works_1st.vue';
 import Works2nd from '@/components/works_2nd.vue';
 import Works3rd from '@/components/works_3rd.vue';
 import Traning from '@/components/works_traning.vue';
-import { VueTyper } from 'vue-typer';
 export default {
   components: {
     Works1st,
     Works2nd,
     Works3rd,
     Traning,
-    VueTyper
   },
   data() {
     return{
@@ -157,22 +155,7 @@ export default {
       currentBar.style.transition = 'ease 0.3s';
       currentBar.style.transform = 'translateY(240px)';
     },
-  },
-  // watch:{
-  //   currentView(){
-  //     const worksDom = document.getElementById('works');
-  //     const yearNav = document.getElementById('year-nav');
-  //     let rect = worksDom.getBoundingClientRect();
-  //     console.log(rect.bottom);
-  //     window.addEventListener('scroll', function(){
-  //       let scrollEl = window.scrollY;
-  //       if(scrollEl >= rect.bottom){
-  //         yearNav.style.opacity = "0";
-  //         yearNav.style.filter = 'blur(10px)';
-  //       }
-  //     });
-  //   }
-  // }
+  }
 }
 </script>
 

@@ -1,27 +1,26 @@
 <template>
   <div class="detail">
-    <h1 class="detail__ttl">Fysi</h1>
-    <div class="detail__link"><a href="http://click.ecc.ac.jp/ecc/hisimaru/works/fysi/" target="blank">This Site <span></span></a></div>
+    <h1 class="detail__ttl">Tuiless</h1>
+    <div class="detail__link"><a href="http://click.ecc.ac.jp/ecc/hisimaru/works/web/start.html" target="blank">This Site <span></span></a></div>
     <div class="detail__description">
         <h2>Concept</h2>
-        <p>木や花の自然に囲まれた自然をコンセプトにしたカフェサイト<br>
-        カフェ×自然」のキーワードを元に自然に囲まれて癒されるカフェのサイトを制作しました。</p>
+        <p>「目で見て認識、話して改善」<br>
+          自分の口癖を設定し、口癖を言った回数カウントし、口癖を言った回数を目で見て確認できます。</p>
     </div> <!-- detail__description -->
     <div class="detail__description">
       <h2>Motivation</h2>
-      <p>学校に入って初めてのWebサイトの作品です。<br>
-      地元が自然に囲まれたところで自分自身とても癒されていたので、<br>自然とカフェを掛け合わせたカフェのWebサイトを作りました。<br>
-      Webエンジニアを目指したいと思っており、コーディングに力を入れた作品になっています。</p>
+      <p>JavaScriptを使って音声認識、口癖を言った回数を数えるカウント機能<br>
+        会話の中から口癖を見つける機能の作成に携わりました。</p>
     </div> <!-- detail__consept -->
     <div class="detail__productDetail">
       <ul class="detail__productDetail__child01">
         <li>
           <p class="detail__productDetail__child01__enfont">Production</p>
-          <p>個人制作</p>
+          <p>グループ制作</p>
         </li>
         <li>
           <p class="detail__productDetail__child01__enfont">Position</p>
-          <p>企画/デザイン/コーデング</p>
+          <p>企画/コーディング</p>
         </li>
       </ul> <!-- detail__productDetail__child01 -->
       <ul class="detail__productDetail__child02">
@@ -31,11 +30,11 @@
         </li>
         <li>
           <p>Tool</p>
-          <p>Photoshop/Illustrator/<br/>HTML/CSS/JavaScript</p>
+          <p>HTML/SCSS/JavaScript</p>
         </li>
       </ul> <!-- detail__productDetail__child02 -->
     </div> <!-- detail__productDetail -->
-    <div class="detail__button"><a href="https://github.com/HirokiIshimaru/Fysi" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a></div>
+    <div class="detail__button"><a href="https://github.com/HirokiIshimaru/tuiless_app" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a></div>
     <div class="detail__button"><router-link to="/">他の作品を見る</router-link></div>
     <footer><p class="copyright">&copy; 2020 hirokiishimaru</p></footer>
   </div> <!-- detail -->

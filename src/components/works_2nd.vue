@@ -13,7 +13,7 @@
                     <p class="works__content__skill__list">HTML5 / CSS / JavaScript</p>
                 </div>
                 <div class="works__content__link">
-                    <router-link to="#" class="works__content__link__btn">詳細へ</router-link>
+                    <router-link to="/portfoliov1-detail" class="works__content__link__btn" target="_blank">詳細へ</router-link>
                     <a href="https://github.com/HirokiIshimaru/portfolio_ver1" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a>
                     <a href="http://click.ecc.ac.jp/ecc/hisimaru/works/portfolio01/portfolio.html" target="_blank" rel="noopener" class="works__content__link__btn">サイトへ</a>
                 </div>
@@ -32,9 +32,9 @@
                     <p class="works__content__skill__list">HTML5 / SCSS / JavaScript</p>
                 </div>
                 <div class="works__content__link">
-                    <router-link to="#" class="works__content__link__btn">詳細へ</router-link>
-                    <a href="hhttps://github.com/HirokiIshimaru/portfolio_ver2" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a>
-                    <a href="hhttp://click.ecc.ac.jp/ecc/hisimaru/works/portfolio_web/" target="_blank" rel="noopener" class="works__content__link__btn">サイトへ</a>
+                    <router-link to="/portfoliov2-detail" class="works__content__link__btn" target="_blank">詳細へ</router-link>
+                    <a href="https://github.com/HirokiIshimaru/portfolio_ver2" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a>
+                    <a href="http://click.ecc.ac.jp/ecc/hisimaru/works/portfolio_web/" target="_blank" rel="noopener" class="works__content__link__btn">サイトへ</a>
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
                     <p class="works__content__skill__list">HTML5 / CSS / JavaScript / Vue.js</p>
                 </div>
                 <div class="works__content__link">
-                    <router-link to="#" class="works__content__link__btn">詳細へ</router-link>
+                    <router-link to="/mule-detail" class="works__content__link__btn" target="_blank">詳細へ</router-link>
                     <a href="https://github.com/HirokiIshimaru/Mule" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a>
                     <a href="http://click.ecc.ac.jp/ecc/hisimaru/works/mule_web/dist/" target="_blank" rel="noopener" class="works__content__link__btn">サイトへ</a>
                 </div>
@@ -70,7 +70,7 @@
                     <p class="works__content__skill__list">HTML5 / SCSS / JavaScript</p>
                 </div>
                 <div class="works__content__link">
-                    <router-link to="#" class="works__content__link__btn">詳細へ</router-link>
+                    <router-link to="/personali-detail" class="works__content__link__btn" target="_blank">詳細へ</router-link>
                     <a href="https://github.com/HirokiIshimaru/personalI" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a>
                     <a href="http://click.ecc.ac.jp/ecc/hisimaru/works/personal%20I/" target="_blank" rel="noopener" class="works__content__link__btn">サイトへ</a>
                 </div>
@@ -89,7 +89,7 @@
                     <p class="works__content__skill__list">HTML5 / SCSS / JavaScript</p>
                 </div>
                 <div class="works__content__link">
-                    <router-link to="#" class="works__content__link__btn">詳細へ</router-link>
+                    <router-link to="/tuiless-detail" class="works__content__link__btn" target="_blank">詳細へ</router-link>
                     <a href="https://github.com/HirokiIshimaru/tuiless_app" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a>
                     <a href="http://click.ecc.ac.jp/ecc/hisimaru/works/web/start.html" target="_blank" rel="noopener" class="works__content__link__btn">サイトへ</a>
                 </div>
