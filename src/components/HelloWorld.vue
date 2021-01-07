@@ -111,13 +111,14 @@ export default {
       const worksDom = document.getElementById('works');
       const yearNav = document.getElementById('year-nav');
       let rect = worksDom.getBoundingClientRect();
-      console.log(rect.top, rect.bottom);
+      let rectTop = rect.top + window.pageYOffset;
+      let rectBottom = rect.bottom + window.pageYOffset;
       window.addEventListener('scroll', function(){
         let scrollEl = window.scrollY;
-        if(scrollEl >= rect.bottom){
+        if(scrollEl >= rectBottom){
           yearNav.style.opacity = "0";
           yearNav.style.filter = 'blur(10px)';
-        }else if(scrollEl >= rect.top){
+        }else if(scrollEl >= rectTop){
           yearNav.style.opacity = "1";
           yearNav.style.transition = "ease-out 0.2s";
           yearNav.style.filter = 'blur(0px)';
