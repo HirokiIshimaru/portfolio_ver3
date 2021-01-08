@@ -13,7 +13,7 @@
                     <p class="works__content__skill__list">HTML5 / CSS / JavaScript</p>
                 </div>
                 <div class="works__content__link">
-                    <router-link to="/fysi-detail" class="works__content__link__btn" target="_blank">詳細へ</router-link>
+                    <router-link to="/fysi-detail" class="works__content__link__btn">詳細へ</router-link>
                     <a href="https://github.com/HirokiIshimaru/Fysi" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a>
                     <a href="http://click.ecc.ac.jp/ecc/hisimaru/works/fysi/" target="_blank" rel="noopener" class="works__content__link__btn">サイトへ</a>
                 </div>
@@ -32,7 +32,7 @@
                     <p class="works__content__skill__list">HTML5 / CSS / PHP</p>
                 </div>
                 <div class="works__content__link">
-                    <router-link to="/fitness-detail" class="works__content__link__btn" target="_blank">詳細へ</router-link>
+                    <router-link to="/fitness-detail" class="works__content__link__btn">詳細へ</router-link>
                     <a href="https://github.com/HirokiIshimaru/afterschoolFitness" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a>
                     <a href="http://click.ecc.ac.jp/ecc/hisimaru/works/afterschool_fitnes/" target="_blank" rel="noopener" class="works__content__link__btn">サイトへ</a>
                 </div>
@@ -51,7 +51,7 @@
                     <p class="works__content__skill__list">HTML5 / CSS / JavaScript</p>
                 </div>
                 <div class="works__content__link">
-                    <router-link to="/lookclothe-detail" class="works__content__link__btn" target="_blank">詳細へ</router-link>
+                    <router-link to="/lookclothe-detail" class="works__content__link__btn">詳細へ</router-link>
                     <a href="https://github.com/HirokiIshimaru/LookClothe" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a>
                     <a href="http://click.ecc.ac.jp/ecc/hisimaru/works/lookclothe_web/" target="_blank" rel="noopener" class="works__content__link__btn">サイトへ</a>
                 </div>
@@ -70,7 +70,7 @@
                     <p class="works__content__skill__list">HTML5 / CSS / PHP</p>
                 </div>
                 <div class="works__content__link">
-                    <router-link to="/mama-detail" class="works__content__link__btn" target="_blank">詳細へ</router-link>
+                    <router-link to="/mama-detail" class="works__content__link__btn">詳細へ</router-link>
                     <a href="https://github.com/HirokiIshimaru/MAMAgement" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a>
                     <a href="http://click.ecc.ac.jp/ecc/hisimaru/works/mamas/" target="_blank" rel="noopener" class="works__content__link__btn">サイトへ</a>
                 </div>

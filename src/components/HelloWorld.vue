@@ -107,27 +107,6 @@ export default {
     }
   },
   methods: {
-    window:onload = () =>{
-      const worksDom = document.getElementById('works');
-      const yearNav = document.getElementById('year-nav');
-      let rect = worksDom.getBoundingClientRect();
-      let rectTop = rect.top + window.pageYOffset;
-      let rectBottom = rect.bottom + window.pageYOffset;
-      window.addEventListener('scroll', function(){
-        let scrollEl = window.scrollY;
-        if(scrollEl >= rectBottom){
-          yearNav.style.opacity = "0";
-          yearNav.style.filter = 'blur(10px)';
-        }else if(scrollEl >= rectTop){
-          yearNav.style.opacity = "1";
-          yearNav.style.transition = "ease-out 0.2s";
-          yearNav.style.filter = 'blur(0px)';
-        }else{
-          yearNav.style.opacity = "0";
-          yearNav.style.filter = 'blur(10px)';
-        }
-      });
-    },
     view1() {
       this.currentView = "Works1st";
       this.currentTtl = "1年次";
@@ -156,6 +135,39 @@ export default {
       currentBar.style.transition = 'ease 0.3s';
       currentBar.style.transform = 'translateY(240px)';
     },
+    viewNav:function() {
+      const worksDom = document.getElementById('works');
+      const yearNav = document.getElementById('year-nav');
+      const getWorksBottom = document.getElementById('works-component');
+      let rect = worksDom.getBoundingClientRect();
+      let getBottomRect = getWorksBottom.getBoundingClientRect();
+      let rectTop = rect.top + window.pageYOffset;
+      let rectBottom = getBottomRect.bottom + window.pageYOffset;
+      window.addEventListener('scroll', function(){
+        let scrollEl = window.scrollY;
+        if(scrollEl >= rectBottom){
+          yearNav.style.opacity = "0";
+          yearNav.style.filter = 'blur(10px)';
+        }else if(scrollEl >= rectTop){
+          yearNav.style.opacity = "1";
+          yearNav.style.transition = "ease-out 0.2s";
+          yearNav.style.filter = 'blur(0px)';
+        }else{
+          yearNav.style.opacity = "0";
+          yearNav.style.filter = 'blur(10px)';
+        }
+      });
+    }
+  },
+  watch:{
+    currentView: function(){
+      setTimeout(()=> {
+        this.viewNav();
+      },1000)
+    }
+  },
+  mounted() {
+    this.viewNav();
   }
 }
 </script>
