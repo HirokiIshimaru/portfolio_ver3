@@ -21,18 +21,6 @@ const routes = [
     meta: {title: '石丸大貴 - ポートフォリオサイト'}
   },
   {
-    path: '/about',
-    name: 'About',
-  },
-  {
-    path: '/works',
-    name: 'Works',
-  },
-  {
-    path: '/contact',
-    name: 'Contact',
-  },
-  {
     path: '/fysi-detail',
     name: 'fysi-detail',
     component: FysiDetail
