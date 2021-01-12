@@ -4,10 +4,10 @@
     <header class="main-visual" id="home">
       <div class="main-visual__wrapper">
         <div class="main-visual__ttl" id="logo">
-          <img src="@/assets/ttl.svg" alt="ロゴ">
+          <img src="../assets/ttl.svg" alt="ロゴ">
         </div>  <!-- main-visual__ttl -->
         <h2 class="main-visual__subttl" id="sub-ttl">
-          <img src="@/assets/subttl.svg" alt="サブタイトル">
+          <img src="../assets/subttl.svg" alt="サブタイトル">
         </h2>
       </div>
     </header> <!-- main-visual__subttl -->
@@ -18,14 +18,14 @@
         <div class="about__wrapper">
           <div class="about__wrapper__wrap">
             <div class="about__wrapper__wrap__leftbox">
-              <img src="@/assets/about_my_img.png" alt="">
+              <img src="../assets/about_my_img.png" alt="">
               <h3 class="about__wrapper__wrap__leftbox__platform">Platform ・ SNS</h3>
               <a href="https://github.com/HirokiIshimaru?tab=repositories" target="_blank" rel="noopener" class="about__wrapper__wrap__leftbox__github">
-                <img src="@/assets/github.svg" alt="">
+                <img src="../assets/github.svg" alt="">
                 <span>to Github</span>
               </a> <!-- about__wrapper__wrap__leftbox__github -->
               <a href="https://www.wantedly.com/id/hirokiishimaru" target="_blank" rel="noopener" class="about__wrapper__wrap__leftbox__wantedly">
-                <img src="@/assets/mark_visit.svg" alt="">
+                <img src="../assets/mark_visit.svg" alt="">
                 <span>to Wantedly</span>
               </a>  <!-- about__wrapper__wrap__leftbox__wantedly -->
             </div>  <!-- about__wrapper__wrap__leftbox -->
@@ -33,7 +33,7 @@
               <h3 class="about__wrapper__wrap__rightbox__name">HIROKI ISHIMARU</h3>
               <p>ECCコンピュータ専門学校 Webデザインコース 22年卒</p>
               <p>フロントエンドエンジニア志望</p>
-              <p class="about__wrapper__wrap__rightbox__trigger"><img src="@/assets/trigger.svg" alt="web業界を目指したきっかけ"></p>
+              <p class="about__wrapper__wrap__rightbox__trigger"><img src="../assets/trigger.svg" alt="web業界を目指したきっかけ"></p>
               <p>高校時代は農業について調べることが多く、<br>
               その際に様々なWebサイトを見て興味を持ち、<br>
               将来はWebに携わりたいと思い、<br>

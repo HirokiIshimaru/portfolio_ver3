@@ -1,7 +1,7 @@
 <template>
   <div class="detail">
     <h1 class="detail__ttl">ポートフォリオver2</h1>
-    <div class="detail__link"><a href="http://click.ecc.ac.jp/ecc/hisimaru/works/mule_web/dist/" target="blank">This Site <span></span></a></div>
+    <div class="detail__link"><a href="http://click.ecc.ac.jp/ecc/hisimaru/works/portfolio_web/" target="blank">This Site <span></span></a></div>
     <div class="detail__description">
         <h2>Concept</h2>
         <p>黒を基調とし自分らしさを出したポートフォリオサイト</p>
@@ -34,7 +34,7 @@
       </ul> <!-- detail__productDetail__child02 -->
     </div> <!-- detail__productDetail -->
     <div class="detail__button"><a href="https://github.com/HirokiIshimaru/portfolio_ver2" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a></div>
-    <div class="detail__button"><router-link to="/">他の作品を見る</router-link></div>
+    <div class="detail__button"><router-link to="./">他の作品を見る</router-link></div>
     <footer><p class="copyright">&copy; 2020 hirokiishimaru</p></footer>
   </div> <!-- detail -->
 </template>
@@ -50,5 +50,10 @@ $fontColor: #fff;
 h1,h2,h3, p, a, li, button{
   color: $fontColor;
   text-decoration: none;
+}
+
+.detail__link{
+  background-image: url('../../assets/portfolio-v2_detail.jpg');
+  background-size: cover;
 }
 </style>

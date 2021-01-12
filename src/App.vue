@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <header id="nav">
-      <router-link v-scroll-to="'#home'" to="/">Home</router-link>
-      <router-link v-scroll-to="'#about'" to="/">About</router-link>
-      <router-link v-scroll-to="'#works'" to="/">Works</router-link>
-      <router-link v-scroll-to="'#contact'" to="/">Contact</router-link>
+      <router-link v-scroll-to="'#home'" to="./">Home</router-link>
+      <router-link v-scroll-to="'#about'" to="./">About</router-link>
+      <router-link v-scroll-to="'#works'" to="./">Works</router-link>
+      <router-link v-scroll-to="'#contact'" to="./">Contact</router-link>
     </header>
     <router-view/>
   </div>

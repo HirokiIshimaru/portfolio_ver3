@@ -1,12 +1,12 @@
 <template>
   <div class="detail">
     <h1 class="detail__ttl">LookClothe</h1>
-    <div class="detail__link"><a href="hhttp://click.ecc.ac.jp/ecc/hisimaru/works/lookclothe_web/" target="blank">This Site <span></span></a></div>
+    <div class="detail__link"><a href="http://click.ecc.ac.jp/ecc/hisimaru/works/lookclothe_web/" target="blank">This Site <span></span></a></div>
     <div class="detail__description">
         <h2>Concept</h2>
         <p>使えるお金が限られている大学生をターゲットに、<br>
           大学生ともなれば私服で学校に通うことが多くなり、服不足という悩みを解決するために<br>
-          大学生に手が届く月額定額でスタイリスト考案のコーデを一式レンタルできるサービスです</p>
+          大学生に手が届く月額定額でスタイリスト考案のコーデを一式レンタルできるサービスです。</p>
     </div> <!-- detail__description -->
     <div class="detail__description">
       <h2>Motivation</h2>
@@ -36,7 +36,7 @@
       </ul> <!-- detail__productDetail__child02 -->
     </div> <!-- detail__productDetail -->
     <div class="detail__button"><a href="hhttps://github.com/HirokiIshimaru/LookClothe" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a></div>
-    <div class="detail__button"><router-link to="/">他の作品を見る</router-link></div>
+    <div class="detail__button"><router-link to="./">他の作品を見る</router-link></div>
     <footer><p class="copyright">&copy; 2020 hirokiishimaru</p></footer>
   </div> <!-- detail -->
 </template>
@@ -52,5 +52,10 @@ $fontColor: #fff;
 h1,h2,h3, p, a, li, button{
   color: $fontColor;
   text-decoration: none;
+}
+
+.detail__link{
+  background-image: url('../../assets/lookclothe_detail.jpg');
+  background-size: cover;
 }
 </style>

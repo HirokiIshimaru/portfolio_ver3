@@ -13,59 +13,125 @@ import TuilessDetail from '@/components/detail/tuiless_detail.vue'
 
 Vue.use(VueRouter)
 
+const eccPath = "/ecc/hisimaru/";
+// デプロイ
 const routes = [
   {
-    path: '/',
+    path: eccPath+'dist/',
     name: 'Home',
     component: Home,
     meta: {title: '石丸大貴 - ポートフォリオサイト'}
   },
   {
-    path: '/fysi-detail',
+    path: eccPath+'dist/fysi-detail/',
     name: 'fysi-detail',
     component: FysiDetail
   },
   {
-    path: '/fitness-detail',
+    path: eccPath+'dist/fitness-detail',
     name: 'fitness-detail',
     component: FitnessDetail
   },
   {
-    path: '/lookclothe-detail',
+    path: eccPath+'dist/lookclothe-detail',
     name: 'lookclothe-detail',
     component: LookclotheDetail
   },
   {
-    path: '/mama-detail',
+    path: eccPath+'dist/mama-detail',
     name: 'mama-detail',
     component: MamaDetail
   },
   {
-    path: '/mule-detail',
+    path: eccPath+'dist/mule-detail',
     name: 'mule-detail',
     component: MuleDetail
   },
   {
-    path: '/personali-detail',
+    path: eccPath+'dist/personali-detail',
     name: 'personali-detail',
     component: PersonaliDetail
   },
   {
-    path: '/portfoliov1-detail',
+    path: eccPath+'dist/portfoliov1-detail',
     name: 'portfoliov1-detail',
     component: Portfoliov1Detail
   },
   {
-    path: '/fysi-detail',
+    path: eccPath+'dist/portfoliov2-detail',
+    name: 'portfoliov2-detail',
+    component: Portfoliov2Detail
+  },
+  {
+    path: eccPath+'dist/fysi-detail',
     name: 'fysi-detail',
     component: Portfoliov2Detail
   },
   {
-    path: '/tuiless-detail',
+    path: eccPath+'dist/tuiless-detail',
     name: 'tuiless-detail',
     component: TuilessDetail
   },
 ]
+// ローカルよう
+// const routes = [
+//   {
+//     path: 'dist/',
+//     name: 'Home',
+//     component: Home,
+//     meta: {title: '石丸大貴 - ポートフォリオサイト'}
+//   },
+//   {
+//     path: '/fysi-detail',
+//     name: 'fysi-detail',
+//     component: FysiDetail
+//   },
+//   {
+//     path: '/fitness-detail',
+//     name: 'fitness-detail',
+//     component: FitnessDetail
+//   },
+//   {
+//     path: '/lookclothe-detail',
+//     name: 'lookclothe-detail',
+//     component: LookclotheDetail
+//   },
+//   {
+//     path: '/mama-detail',
+//     name: 'mama-detail',
+//     component: MamaDetail
+//   },
+//   {
+//     path: '/mule-detail',
+//     name: 'mule-detail',
+//     component: MuleDetail
+//   },
+//   {
+//     path: '/personali-detail',
+//     name: 'personali-detail',
+//     component: PersonaliDetail
+//   },
+//   {
+//     path: '/portfoliov1-detail',
+//     name: 'portfoliov1-detail',
+//     component: Portfoliov1Detail
+//   },
+//   {
+//     path: '/portfoliov2-detail',
+//     name: 'portfoliov2-detail',
+//     component: Portfoliov2Detail
+//   },
+//   {
+//     path: '/fysi-detail',
+//     name: 'fysi-detail',
+//     component: Portfoliov2Detail
+//   },
+//   {
+//     path: '/tuiless-detail',
+//     name: 'tuiless-detail',
+//     component: TuilessDetail
+//   },
+// ]
 
 const router = new VueRouter({
   mode: 'history',

@@ -1,6 +1,4 @@
-module.exports = {
-    publicPath: './',
-    plugins: [
-      '~/plugins/vue-scrollto'
-    ],
-  }
+module.exports ={
+  publicPath: './',
+  // assetsPublicPath: './'
+}
