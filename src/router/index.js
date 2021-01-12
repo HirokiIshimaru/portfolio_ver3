@@ -17,58 +17,58 @@ const eccPath = "/ecc/hisimaru/";
 // デプロイ
 const routes = [
   {
-    path: eccPath+'dist/',
+    path: eccPath,
     name: 'Home',
     component: Home,
     meta: {title: '石丸大貴 - ポートフォリオサイト'}
   },
   {
-    path: eccPath+'dist/fysi-detail/',
+    path: eccPath+'fysi-detail/',
     name: 'fysi-detail',
     component: FysiDetail
   },
   {
-    path: eccPath+'dist/fitness-detail',
+    path: eccPath+'fitness-detail',
     name: 'fitness-detail',
     component: FitnessDetail
   },
   {
-    path: eccPath+'dist/lookclothe-detail',
+    path: eccPath+'lookclothe-detail',
     name: 'lookclothe-detail',
     component: LookclotheDetail
   },
   {
-    path: eccPath+'dist/mama-detail',
+    path: eccPath+'mama-detail',
     name: 'mama-detail',
     component: MamaDetail
   },
   {
-    path: eccPath+'dist/mule-detail',
+    path: eccPath+'mule-detail',
     name: 'mule-detail',
     component: MuleDetail
   },
   {
-    path: eccPath+'dist/personali-detail',
+    path: eccPath+'personali-detail',
     name: 'personali-detail',
     component: PersonaliDetail
   },
   {
-    path: eccPath+'dist/portfoliov1-detail',
+    path: eccPath+'portfoliov1-detail',
     name: 'portfoliov1-detail',
     component: Portfoliov1Detail
   },
   {
-    path: eccPath+'dist/portfoliov2-detail',
+    path: eccPath+'portfoliov2-detail',
     name: 'portfoliov2-detail',
     component: Portfoliov2Detail
   },
   {
-    path: eccPath+'dist/fysi-detail',
+    path: eccPath+'fysi-detail',
     name: 'fysi-detail',
     component: Portfoliov2Detail
   },
   {
-    path: eccPath+'dist/tuiless-detail',
+    path: eccPath+'tuiless-detail',
     name: 'tuiless-detail',
     component: TuilessDetail
   },
@@ -76,7 +76,7 @@ const routes = [
 // ローカルよう
 // const routes = [
 //   {
-//     path: 'dist/',
+//     path: '',
 //     name: 'Home',
 //     component: Home,
 //     meta: {title: '石丸大貴 - ポートフォリオサイト'}
