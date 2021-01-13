@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&family=Noto+Serif+TC:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+$jpFont: 'Noto Sans JP', sans-serif;
+$enFont: 'Noto Serif TC','Noto Serif JP', serif;
+h1, h2, h3, a, span{
+  font-family: $enFont;
+}
+p, button{
+  font-family: $jpFont;
+}
+
+.detail{
+  width: 100%;
+  height: 100%;
+  margin-top: 200px;
+  &__ttl{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+    h1{
+      font-size: 30px;
+    }
+  }
+  &__link{
+    width: 69%;
+    height: 70vh;
+    margin: 0 auto;
+    position: relative;
+    &::after{
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba($color: #000000, $alpha: 0.4);
+    }
+    a{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      color: #fff;
+      font-size: 30px;
+      text-decoration: none;
+      font-weight: 100;
+      transition: ease 0.3s;
+      span{
+        width: 20px;
+        height: 20px;
+        border-top: solid 2px #fff;
+        border-right: solid 2px #fff;
+        transform: rotate(45deg);
+        margin-top: 5px;
+        transition: ease 0.3s;
+      }
+      &:hover span{
+        transform: translateX(20px) rotate(45deg);
+      }
+      &:hover{
+        background-color: rgba($color: #000000, $alpha: 0.6);
+      }
+    }
+  }
+  &__description{
+    text-align: center;
+    margin: 100px auto 0;
+    h2{
+      font-size: 30px;
+      font-weight: 100;
+      margin-bottom: 30px;
+    }
+    p{
+      font-size: 16px;
+      line-height: 2.5;
+    }
+  }
+  &__productDetail{
+    margin-top: 200px;
+    &__child01{
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+      list-style: none;
+      text-align: center;
+      li{
+        width: 200px;
+        margin-bottom: 100px;
+        p:first-child{
+          font-size: 23px;
+          font-family: $enFont;
+          border-bottom: solid 1px #fff;
+        }
+        p:nth-child(2){
+          margin-top: 40px;
+          font-size: 16px;
+        }
+      }
+    }
+    &__child02{
+      @extend .detail__productDetail__child01;
+      p:first-child{
+        font-size: 23px;
+        font-family: $enFont;
+        border-bottom: solid 1px #fff;
+      }
+      p:nth-child(2){
+        margin-top: 40px;
+        font-size: 16px;
+      }
+    }
+  }
+  &__button{
+    text-align: center;
+    margin-bottom: 50px;
+    a{
+      width: 160px;
+      height: 50px;
+      line-height: 50px;
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      border: 1px solid #707070;
+      font-family: 'Noto Sans JP', sans-serif;
+      margin-right: 15px;
+      transition: ease 0.4s;
+      &:hover{
+        border: solid 1px transparent;
+        color: #fff;
+      }
+      &:before,&:after{
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: scale(0);
+        transition: ease 0.4s;
+      }
+      &:before{
+        border-bottom: solid 2px #fff;
+        border-left: solid 2px #fff;
+        transform-origin: 100% 0%;
+      }
+      &:after{
+        border-top: solid 2px #fff;
+        border-right: solid 2px #fff;
+        transform-origin: 0% 100%;
+      }
+      &:hover:before,
+      &:hover:after{
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+footer{
+  width: 100%;
+  .copyright{
+    font-size: 13px;
+    font-weight: lighter;
+    text-align: center;
+    margin: 150px 0 10px 0;
+  }
+}
