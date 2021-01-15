@@ -7,7 +7,7 @@
           <img src="../assets/ttl.svg" alt="ロゴ">
         </div>  <!-- main-visual__ttl -->
         <h2 class="main-visual__subttl" id="sub-ttl">
-          <img src="../assets/subttl.svg" alt="サブタイトル">
+          田舎の農業高校からWebエンジニアへ
         </h2>
       </div>
     </header> <!-- main-visual__subttl -->

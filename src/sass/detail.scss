@@ -1,14 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&family=Noto+Serif+TC:wght@200;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
-$jpFont: 'Noto Sans JP', sans-serif;
-$enFont: 'Noto Serif TC','Noto Serif JP', serif;
-h1, h2, h3, a, span{
-  font-family: $enFont;
-}
-p, button{
-  font-family: $jpFont;
-}
+@import '_font';
 
+// detail
 .detail{
   width: 100%;
   height: 100%;
@@ -76,7 +68,7 @@ p, button{
       margin-bottom: 30px;
     }
     p{
-      font-size: 16px;
+      font-size: 15px;
       line-height: 2.5;
     }
   }
@@ -99,7 +91,7 @@ p, button{
         }
         p:nth-child(2){
           margin-top: 40px;
-          font-size: 16px;
+          font-size: 15px;
         }
       }
     }
@@ -112,7 +104,7 @@ p, button{
       }
       p:nth-child(2){
         margin-top: 40px;
-        font-size: 16px;
+        font-size: 15px;
       }
     }
   }
@@ -163,6 +155,7 @@ p, button{
   }
 }
 
+// footer
 footer{
   width: 100%;
   .copyright{

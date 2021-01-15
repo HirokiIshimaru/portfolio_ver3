@@ -1,6 +1,10 @@
+@import '_font';
+
+// works
 .works{
     display: flex;
     margin-bottom: 100px;
+    font-family: $jpFont;
     &__img{
         margin-right: 50px;
     }
