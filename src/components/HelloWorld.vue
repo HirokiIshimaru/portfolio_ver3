@@ -113,6 +113,7 @@ export default {
       let currentBar = document.getElementById('current-bar');
       currentBar.style.transition = 'ease 0.3s';
       currentBar.style.transform = 'translateY(0px)';
+      console.log('aaa');
     },
     view2() {
       this.currentView = "Works2nd";
