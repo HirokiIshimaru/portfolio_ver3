@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&family=Noto+Serif+TC:wght@200;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
-$jpFont: 'Noto Sans JP', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap');
+$jpFont: 'Noto Serif JP', serif;
 $enFont: 'Noto Serif TC','Noto Serif JP', serif;
 h1, h2, h3, a{
   font-family: $enFont;
@@ -43,13 +43,17 @@ p, button, span{
     margin: 30px 0 30px 0;
     letter-spacing: 0.04em;
     width: 500px;
-    img {
+    &__logo{
       display: block;
       width: 100%;
+      height: 100%;
     }
   }
   &__subttl {
     width: 500px;
+    font-family: $jpFont;
+    font-size: 25px;
+    text-align: center;
     opacity: 0;
     animation: showSubttl ease 0.5s forwards;
     animation-delay: 10s;
