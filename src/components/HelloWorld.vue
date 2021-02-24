@@ -73,6 +73,7 @@
               <component :is="currentView" id="works-component"></component>
             </transition>
           </div>
+          <div class="works__wrapper__mockup" id="viewmockup"></div>
         </div> <!-- works__wrapper -->
       </div> <!-- works -->
 
