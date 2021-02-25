@@ -1,10 +1,8 @@
 <template>
-  <div class="wrapper">
-    
+  <div class="wrapper">  
     <header class="main-visual" id="home">
       <div class="main-visual__wrapper">
         <div class="main-visual__ttl" id="logo">
-          <!-- <img src="../assets/ttl.svg" alt="ロゴ"> -->
           <svg class="main-visual__ttl__logo" id="svg-logo" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" width="288.28mm" height="115.56mm" viewBox="0 0 817.17 327.58">
             <g>
               <g class="wrap_all">
@@ -53,7 +51,7 @@
             </div>  <!-- about__wrapper__wrap__leftbox -->
             <div class="about__wrapper__wrap__rightbox">
               <h3 class="about__wrapper__wrap__rightbox__name">HIROKI ISHIMARU</h3>
-              <p>ECCコンピュータ専門学校 Webデザインコース 22年卒</p>
+              <p>ECCコンピュータ専門学校 Webデザインコース22年卒</p>
               <p>フロントエンドエンジニア志望</p>
               <p class="about__wrapper__wrap__rightbox__trigger"><img src="../assets/trigger.svg" alt="web業界を目指したきっかけ"></p>
               <p>高校時代は農業について調べることが多く、<br>
@@ -69,7 +67,7 @@
         <h2 class="nav-ttl">Works</h2>
         <div class="works__wrapper">
           <div class="works__wrapper__leftbox" id="year-nav">
-            <h3 class="works__wrapper__leftbox__heading">{{currentTtl}}</h3>
+            <h3 class="works__wrapper__leftbox__heading">{{currentTtl}}</h3> 
             <div class="works__wrapper__leftbox__select-year">
               <div class="works__wrapper__leftbox__select-year__select-area">
                 <div class="works__wrapper__leftbox__select-year__select-area__select-bar" id="current-bar"></div>
@@ -136,7 +134,6 @@ export default {
       let currentBar = document.getElementById('current-bar');
       currentBar.style.transition = 'ease 0.3s';
       currentBar.style.transform = 'translateY(0px)';
-      console.log('aaa');
     },
     view2() {
       this.currentView = "Works2nd";

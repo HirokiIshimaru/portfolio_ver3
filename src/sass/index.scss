@@ -24,7 +24,7 @@ p, button, span{
   animation: viewMainVisual ease 2.5s forwards;
   @keyframes viewMainVisual {
     0%{ 
-      filter: blur(20px);
+      filter: blur(100px);
       opacity: 0;
     }
     100%{
@@ -172,11 +172,6 @@ p, button, span{
       height: 100px;
       font-family: $jpFont;
       font-size: 25px;
-      color: #fff !important;
-      .vue-typer .custom.char {
-        color: #ffffff;
-        background-color: #ffffff;
-      }
     }
     &__select-year{
       display: flex;
