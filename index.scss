@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&family=Noto+Serif+TC:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap');
+$jpFont: 'Noto Serif JP', serif;
+$enFont: 'Noto Serif TC','Noto Serif JP', serif;
+h1, h2, h3, a{
+  font-family: $enFont;
+}
+p, button, span{
+  font-family: $jpFont;
+}
+// main-visual
+.main-visual {
+  font-weight: 300;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  background-image: url("~@/assets/header_bg.jpg"); 
+  &::before,&::after{
+    animation: 1s cubic-bezier(.4, 0, .2, 1) forwards;
+    background-color: #111;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+  } 
+  &::before{
+    animation-name: img-before;
+    top: 0;
+    bottom: 50%;
+  }
+  &::after{
+    animation-name: img-after;
+    top: 50%;
+    bottom: 0;
+  }
+  @keyframes img-before{
+    100%{
+      transform: translateX(100%);
+    }
+  }
+  @keyframes img-after{
+    100%{
+      transform: translateX(-100%);
+    }
+  }
+  &__mask{
+    position: absolute;
+    top :0;
+    left: 0;
+    right :0;
+    bottom:0;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.9), transparent);
+  }
+  &__wrapper {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  &__ttl {
+    margin: 30px 0 30px 0;
+    letter-spacing: 0.04em;
+    width: 500px;
+    &__logo{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__subttl {
+    width: 500px;
+    font-family: $jpFont;
+    font-size: 25px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: showSubttl ease 0.5s forwards;
+    animation-delay: 9s;
+    @keyframes showSubttl {
+      100%{
+        opacity: 1;
+        transform: translateY(10px);
+      }
+    }
+  }
+}
+
+// about
+.nav-ttl{
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  margin: 80px 0;
+}
+.about__wrapper{
+  width: 100%;
+  height: 100vh;
+  background-image: url("~@/assets/about_bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__wrap{
+    width: 60%;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    border-radius: 20px;
+    padding: 50px 40px;
+    display: flex;
+    &__leftbox{
+      width: 50%;
+      text-align: center;
+      &__platform{
+        font-size: 20px;
+        margin: 30px 0;
+      }
+      &__github, &__wantedly{
+        max-width: 200px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        transition: ease 0.3s;
+        img{
+          height: 70px;
+        }
+        &:hover{
+          opacity: 0.4;
+        }
+      }
+      &__github{
+        span{
+          padding-bottom: 15px;
+        }
+      }
+    }
+    &__rightbox{
+      text-align: center;
+      &__name{
+        margin: 20px 0 20px;
+        font-size: 35px;
+        font-weight: 300;
+      }
+      &__trigger{
+        margin-top: 50px;
+      }
+      p{
+        &:last-child{
+          margin-top: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+
+
+// works
+.works__wrapper{
+  display: flex;
+  &__leftbox{
+    width: 30vw;
+    text-align: center;
+    opacity: 0;
+    margin: 0 auto;
+    position: fixed;
+    top: 100px;
+    left: -50px;
+    &__heading{
+      height: 100px;
+      font-family: $jpFont;
+      font-size: 25px;
+    }
+    &__select-year{
+      display: flex;
+      justify-content: center;
+      &__select-area{
+        height: 320px;
+        border-right: solid 3px #707070;
+        position: relative;
+        margin-left: 50px;
+        &__select-bar{
+          height: 80px;
+          border-right: solid 3px #fff;
+          position: absolute;
+        }
+      }
+      &__year-list{
+        list-style: none;
+        li{
+          height: 80px;
+          display: flex;
+          align-items: center;
+          text-align: left;
+          margin-left: 20px;
+          button{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            padding: 0;
+            appearance: none;
+            font-size: 18px;
+            display: block;
+            font-weight: 200;
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+            &:after{
+              width: 0;
+              content: '';
+              border-bottom: solid 1.5px #fff;
+              transition: ease 0.3s all;
+              display: block;
+              position: absolute;
+              bottom: 0;
+              right: 0;
+            }
+            &:hover::after{
+              width: 100%;
+              left: 0;
+              border-bottom: solid 1.5px #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__rightbox{
+    width: 50vw;
+    height: 100%;
+    margin-left: 30vw;
+  }
+}
+
+// contact
+.contact{
+  text-align: center;
+  margin-top: 50px;
+  &__message{
+    margin-bottom: 100px;
+  }
+  &__mail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    &::before, &::after{
+      content: '';
+      width: 1px;
+      border-right: solid 1px #707070;
+      margin: 0 auto;
+      pointer-events: none;
+    }
+    &::before{
+      height: 50px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 50px;
+    }
+    &::after{
+      height: 80px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50px;
+    }
+    a{
+      font-size: 20px;
+      transition: ease 0.3s;
+      &:hover{
+        opacity: 0.3;
+      }
+    }
+  }
+  &__copywrite{
+    font-size: 13px;
+    margin-top: 200px;
+    padding: 10px;
+  }
+}
