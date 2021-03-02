@@ -28,7 +28,7 @@
           </svg>
         </div>  <!-- main-visual__ttl -->
         <h2 class="main-visual__subttl" id="sub-ttl">
-          田舎の農業高校からWebエンジニアへ~
+          田舎の農業高校からWebエンジニアへ
         </h2><!-- main-visual__subttl -->
       </div>
     </header>
