@@ -4,7 +4,7 @@
       <div class="loading-spacer"></div>
       <vue-loading 
         type="spiningDubbles"
-        color="#aaa"
+        color="#fff"
         :size="{ width: '100px', height: '100px' }"
         >
       </vue-loading>
@@ -18,7 +18,7 @@ import { VueLoading } from 'vue-loading-template'
     name: "Home",
     data() {
       return {
-        loading: false,
+        loading: true,
       }
     },
     components:{

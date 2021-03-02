@@ -1,7 +1,14 @@
 <template>
   <div class="wrapper">  
     <header class="main-visual" id="home">
-      <div class="main-visual__mask"></div>
+      <div class="main-visual__mask">
+        <div class="main-visual__mask__arrow-wrap">
+          <div class="main-visual__mask__arrow-wrap__inner">
+            <p>SCROLL DOWN</p>
+            <div class="main-visual__mask__arrow-wrap__arrow"></div>
+          </div>
+        </div>
+      </div>
       <div class="main-visual__wrapper">
         <div class="main-visual__ttl" id="logo">
           <svg class="main-visual__ttl__logo" id="svg-logo" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" width="288.28mm" height="115.56mm" viewBox="0 0 817.17 327.58">
@@ -29,9 +36,9 @@
         </div>  <!-- main-visual__ttl -->
         <h2 class="main-visual__subttl" id="sub-ttl">
           田舎の農業高校からWebエンジニアへ
-        </h2>
+        </h2><!-- main-visual__subttl -->
       </div>
-    </header> <!-- main-visual__subttl -->
+    </header>
 
     <main>
       <div class="about" id="about">
@@ -165,10 +172,8 @@ export default {
       let getBottomRect = getWorksBottom.getBoundingClientRect();
       let rectTop = rect.top + window.pageYOffset;
       let rectBottom = getBottomRect.bottom + window.pageYOffset;
-      console.log(rectTop);
       window.addEventListener('scroll', function(){
         let scrollEl = window.scrollY;
-        console.log(scrollEl)
         if(scrollEl >= rectBottom){
           yearNav.style.opacity = "0";
           yearNav.style.filter = 'blur(10px)';
@@ -190,7 +195,7 @@ export default {
       },1000)
     }
   },
-  beforeMount() {
+  mounted() {
     setTimeout(()=>{
       this.viewNav();
     }, 2000)
