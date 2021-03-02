@@ -1,29 +1,45 @@
 <template>
-  <div id="app">
-    <header id="nav">
-      <router-link v-scroll-to="'#home'" to="./">Home</router-link>
-      <router-link v-scroll-to="'#about'" to="./">About</router-link>
-      <router-link v-scroll-to="'#works'" to="./">Works</router-link>
-      <router-link v-scroll-to="'#contact'" to="./">Contact</router-link>
+  <div>
+    <Loading v-show="loading" id="loading"></Loading>
+    <header id="app" v-show="!loading">
+      <nav>
+        <router-link v-scroll-to="'#home'" to="./">Home</router-link>
+        <router-link v-scroll-to="'#about'" to="./">About</router-link>
+        <router-link v-scroll-to="'#works'" to="./">Works</router-link>
+        <router-link v-scroll-to="'#contact'" to="./">Contact</router-link>
+      </nav>
+      <router-view/>
     </header>
-    <router-view/>
   </div>
 </template>
 
 <script>
+import Loading from '@/views/loading'
 export default {
+  name: 'App',
+  data(){
+    return {
+      loading: true
+    }
+  },
+  components: {
+    Loading,
+  },
   methods:{
     createTitleDesc: function(routeInstance){
       if(routeInstance.meta.title){
         let setTitle = routeInstance.meta.title;
         document.title = setTitle;
       }
-    }
+    },
   },
-  mounted: function(){
+  mounted(){
     let routeInstance = this.$route;
     this.createTitleDesc(routeInstance);
-  }
+    setTimeout(()=>{
+      this.loading = false;
+    }, 1500)
+  },
 }
 </script>
 
@@ -39,7 +55,7 @@ body{
   font-weight: normal;
   font-family: $enFont;
 }
-#nav {
+nav {
   position: fixed;
   z-index: 9999;
   top: 0;
@@ -50,6 +66,16 @@ body{
   display: flex;
   width: 70%;
   max-width: 500px;
+  opacity: 0;
+  transform: translateY(-100px);
+  animation: showNav 1s forwards;
+  animation-delay: 1s;
+  @keyframes showNav{
+    100%{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
   a {
     margin: 30px;
     display: block;
@@ -71,6 +97,27 @@ body{
       width: 100%;
       left: 0;
       border-bottom: solid 1.5px #fff;
+    }
+  }
+}
+.loaded{
+  overflow: hidden;
+  position: relative;
+  &::before{
+    animation: loaded 2s cubic-bezier(.4, 0, .2, 1) forwards;
+    background: #fff;
+    bottom: 0;
+    content: '';
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+  @keyframes loaded {
+    100%{
+      transform: translateX(100%);
     }
   }
 }

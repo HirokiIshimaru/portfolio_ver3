@@ -122,11 +122,6 @@ const routes = [
     component: Portfoliov2Detail
   },
   {
-    path: '/fysi-detail',
-    name: 'fysi-detail',
-    component: Portfoliov2Detail
-  },
-  {
     path: '/tuiless-detail',
     name: 'tuiless-detail',
     component: TuilessDetail
