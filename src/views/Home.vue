@@ -1,7 +1,14 @@
 <template>
   <div class="wrapper">  
     <header class="main-visual" id="home">
-      <div class="main-visual__mask"></div>
+      <div class="main-visual__mask">
+        <div class="main-visual__mask__arrow-wrap">
+          <div class="main-visual__mask__arrow-wrap__inner">
+            <p>SCROLL DOWN</p>
+            <div class="main-visual__mask__arrow-wrap__arrow"></div>
+          </div>
+        </div>
+      </div>
       <div class="main-visual__wrapper">
         <div class="main-visual__ttl" id="logo">
           <svg class="main-visual__ttl__logo" id="svg-logo" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" width="288.28mm" height="115.56mm" viewBox="0 0 817.17 327.58">
