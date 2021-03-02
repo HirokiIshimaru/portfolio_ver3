@@ -29,9 +29,9 @@
         </div>  <!-- main-visual__ttl -->
         <h2 class="main-visual__subttl" id="sub-ttl">
           田舎の農業高校からWebエンジニアへ
-        </h2>
+        </h2><!-- main-visual__subttl -->
       </div>
-    </header> <!-- main-visual__subttl -->
+    </header>
 
     <main>
       <div class="about" id="about">
@@ -165,10 +165,8 @@ export default {
       let getBottomRect = getWorksBottom.getBoundingClientRect();
       let rectTop = rect.top + window.pageYOffset;
       let rectBottom = getBottomRect.bottom + window.pageYOffset;
-      console.log(rectTop);
       window.addEventListener('scroll', function(){
         let scrollEl = window.scrollY;
-        console.log(scrollEl)
         if(scrollEl >= rectBottom){
           yearNav.style.opacity = "0";
           yearNav.style.filter = 'blur(10px)';
@@ -190,7 +188,7 @@ export default {
       },1000)
     }
   },
-  beforeMount() {
+  mounted() {
     setTimeout(()=>{
       this.viewNav();
     }, 2000)
