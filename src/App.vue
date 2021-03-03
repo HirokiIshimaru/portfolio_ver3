@@ -8,7 +8,9 @@
         <router-link v-scroll-to="'#works'" to="./">Works</router-link>
         <router-link v-scroll-to="'#contact'" to="./">Contact</router-link>
       </nav>
-      <router-view/>
+      <vue-page-transition>
+        <router-view/>
+      </vue-page-transition>
     </header>
   </div>
 </template>
@@ -120,5 +122,12 @@ nav {
       transform: translateX(100%);
     }
   }
+}
+:root{
+  --overlay-bg: #111 !important;
+  --transition-duration: .3s !important;
+}
+.overlay-top, .overlay-left, .overlay-right, .overlay-bottom{
+  z-index: 9000;
 }
 </style>

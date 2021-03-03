@@ -3,9 +3,10 @@
     <div class="fullview">
       <div class="loading-spacer"></div>
       <vue-loading 
-        type="spiningDubbles"
+        type="barsCylon"
         color="#fff"
         :size="{ width: '100px', height: '100px' }"
+        class="vue-loading"
         >
       </vue-loading>
     </div>
@@ -36,5 +37,9 @@ import { VueLoading } from 'vue-loading-template'
 }
 .loading-spacer {
   height: 40vh;
+}
+.vue-loading{
+  text-align: center;
+  line-height: 100px;
 }
 </style>
