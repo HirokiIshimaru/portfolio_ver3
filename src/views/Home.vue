@@ -122,12 +122,14 @@ import Works1st from '@/components/works_1st.vue';
 import Works2nd from '@/components/works_2nd.vue';
 import Works3rd from '@/components/works_3rd.vue';
 import Traning from '@/components/works_traning.vue';
+import { VueTyper } from 'vue-typer';
 export default {
   components: {
     Works1st,
     Works2nd,
     Works3rd,
     Traning,
+    'vue-typer': VueTyper,
   },
   data() {
     return{
@@ -229,6 +231,7 @@ h1,h2,h3, p, a, li, button{
 .change-current-enter, .change-current-leave-to{
   opacity: 0;
 }
+
 
 .wrap_all path {
   fill: transparent;

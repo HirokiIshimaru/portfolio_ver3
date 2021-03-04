@@ -34,7 +34,7 @@
       </ul> <!-- detail__productDetail__child02 -->
     </div> <!-- detail__productDetail -->
     <div class="detail__button"><a href="https://github.com/HirokiIshimaru/portfolio_ver2" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a></div>
-    <div class="detail__button"><router-link to="./">他の作品を見る</router-link></div>
+    <div class="detail__button"><router-link to="./">ホームへ戻る</router-link></div>
     <footer><p class="copyright">&copy; 2021 hirokiishimaru</p></footer>
   </div> <!-- detail -->
 </template>
