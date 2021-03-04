@@ -23,7 +23,7 @@ p, button, span{
   position: relative;
   background-image: url("~@/assets/header_bg.jpg"); 
   &::before,&::after{
-    animation: 1s cubic-bezier(.4, 0, .2, 1) forwards;
+    animation: 1s cubic-bezier(.4, 0, .2, 1.5) forwards;
     background-color: #111;
     content: '';
     left: 0;

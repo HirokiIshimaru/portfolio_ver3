@@ -26,13 +26,6 @@ p, button{
     height: 70vh;
     margin: 0 auto;
     position: relative;
-    opacity: 0;
-    animation: show-link 1.5s forwards;
-    @keyframes show-link {
-      100%{
-        opacity: 1;
-      }
-    }
     &::after{
       content: '';
       width: 100%;

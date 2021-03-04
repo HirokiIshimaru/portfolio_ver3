@@ -26,61 +26,51 @@ Vue.use(VueRouter)
 //     path: eccPath+'fysi-detail/',
 //     name: 'fysi-detail',
 //     component: FysiDetail,
-//     meta: { transition: 'overlay-left-full' },
 //   },
 //   {
 //     path: eccPath+'fitness-detail',
 //     name: 'fitness-detail',
 //     component: FitnessDetail,
-//     meta: { transition: 'overlay-left-full' },
 //   },
 //   {
 //     path: eccPath+'lookclothe-detail',
 //     name: 'lookclothe-detail',
 //     component: LookclotheDetail,
-//     meta: { transition: 'overlay-left-full' },
 //   },
 //   {
 //     path: eccPath+'mama-detail',
 //     name: 'mama-detail',
 //     component: MamaDetail,
-//     meta: { transition: 'overlay-left-full' },
 //   },
 //   {
 //     path: eccPath+'mule-detail',
 //     name: 'mule-detail',
 //     component: MuleDetail,
-//     meta: { transition: 'overlay-left-full' },
 //   },
 //   {
 //     path: eccPath+'personali-detail',
 //     name: 'personali-detail',
 //     component: PersonaliDetail,
-//     meta: { transition: 'overlay-left-full' },
 //   },
 //   {
 //     path: eccPath+'portfoliov1-detail',
 //     name: 'portfoliov1-detail',
 //     component: Portfoliov1Detail,
-//     meta: { transition: 'overlay-left-full' },
 //   },
 //   {
 //     path: eccPath+'portfoliov2-detail',
 //     name: 'portfoliov2-detail',
 //     component: Portfoliov2Detail,
-//     meta: { transition: 'overlay-left-full' },
 //   },
 //   {
 //     path: eccPath+'fysi-detail',
 //     name: 'fysi-detail',
 //     component: Portfoliov2Detail,
-//     meta: { transition: 'overlay-left-full' },
 //   },
 //   {
 //     path: eccPath+'tuiless-detail',
 //     name: 'tuiless-detail',
 //     component: TuilessDetail,
-//     meta: { transition: 'overlay-left-full' },
 //   },
 // ]
 // ローカルよう
@@ -95,55 +85,46 @@ const routes = [
     path: '/fysi-detail',
     name: 'fysi-detail',
     component: FysiDetail,
-    meta: { transition: 'overlay-left-full' },
   },
   {
     path: '/fitness-detail',
     name: 'fitness-detail',
     component: FitnessDetail,
-    meta: { transition: 'overlay-left-full' },
   },
   {
     path: '/lookclothe-detail',
     name: 'lookclothe-detail',
     component: LookclotheDetail,
-    meta: { transition: 'overlay-left-full' },
   },
   {
     path: '/mama-detail',
     name: 'mama-detail',
     component: MamaDetail,
-    meta: { transition: 'overlay-left-full' },
   },
   {
     path: '/mule-detail',
     name: 'mule-detail',
     component: MuleDetail,
-    meta: { transition: 'overlay-left-full' },
   },
   {
     path: '/personali-detail',
     name: 'personali-detail',
     component: PersonaliDetail,
-    meta: { transition: 'overlay-left-full' },
   },
   {
     path: '/portfoliov1-detail',
     name: 'portfoliov1-detail',
     component: Portfoliov1Detail,
-    meta: { transition: 'overlay-left-full' },
   },
   {
     path: '/portfoliov2-detail',
     name: 'portfoliov2-detail',
     component: Portfoliov2Detail,
-    meta: { transition: 'overlay-left-full' },
   },
   {
     path: '/tuiless-detail',
     name: 'tuiless-detail',
     component: TuilessDetail,
-    meta: { transition: 'overlay-left-full' },
   },
 ]
 

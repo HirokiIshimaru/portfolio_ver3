@@ -3,12 +3,12 @@
     <Loading v-show="loading" id="loading"></Loading>
     <header id="app" v-show="!loading">
       <nav>
-        <router-link v-scroll-to="'#home'" to="./">Home</router-link>
-        <router-link v-scroll-to="'#about'" to="./">About</router-link>
-        <router-link v-scroll-to="'#works'" to="./">Works</router-link>
-        <router-link v-scroll-to="'#contact'" to="./">Contact</router-link>
+        <router-link to="./" v-scroll-to="'#home'">Home</router-link>
+        <router-link to="./" v-scroll-to="'#about'">About</router-link>
+        <router-link to="./" v-scroll-to="'#works'">Works</router-link>
+        <router-link to="./" v-scroll-to="'#contact'">Contact</router-link>
       </nav>
-      <vue-page-transition>
+      <vue-page-transition name="overlay-left-full">
         <router-view/>
       </vue-page-transition>
     </header>
@@ -125,7 +125,7 @@ nav {
 }
 :root{
   --overlay-bg: #111 !important;
-  --transition-duration: .3s !important;
+  --transition-duration: .5s !important;
 }
 .overlay-top, .overlay-left, .overlay-right, .overlay-bottom{
   z-index: 9000;
