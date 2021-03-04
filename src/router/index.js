@@ -14,76 +14,13 @@ import TuilessDetail from '@/components/detail/tuiless_detail.vue'
 Vue.use(VueRouter)
 
 // デプロイ
-<<<<<<< HEAD
 const eccPath = "/ecc/hisimaru/";
-=======
-// const eccPath = "/ecc/hisimaru/";
-// const routes = [
-//   {
-//     path: eccPath,
-//     name: 'Home',
-//     component: Home,
-//     meta: {title: '石丸大貴 - ポートフォリオサイト'}
-//   },
-//   {
-//     path: eccPath+'fysi-detail/',
-//     name: 'fysi-detail',
-//     component: FysiDetail,
-//   },
-//   {
-//     path: eccPath+'fitness-detail',
-//     name: 'fitness-detail',
-//     component: FitnessDetail,
-//   },
-//   {
-//     path: eccPath+'lookclothe-detail',
-//     name: 'lookclothe-detail',
-//     component: LookclotheDetail,
-//   },
-//   {
-//     path: eccPath+'mama-detail',
-//     name: 'mama-detail',
-//     component: MamaDetail,
-//   },
-//   {
-//     path: eccPath+'mule-detail',
-//     name: 'mule-detail',
-//     component: MuleDetail,
-//   },
-//   {
-//     path: eccPath+'personali-detail',
-//     name: 'personali-detail',
-//     component: PersonaliDetail,
-//   },
-//   {
-//     path: eccPath+'portfoliov1-detail',
-//     name: 'portfoliov1-detail',
-//     component: Portfoliov1Detail,
-//   },
-//   {
-//     path: eccPath+'portfoliov2-detail',
-//     name: 'portfoliov2-detail',
-//     component: Portfoliov2Detail,
-//   },
-//   {
-//     path: eccPath+'fysi-detail',
-//     name: 'fysi-detail',
-//     component: Portfoliov2Detail,
-//   },
-//   {
-//     path: eccPath+'tuiless-detail',
-//     name: 'tuiless-detail',
-//     component: TuilessDetail,
-//   },
-// ]
-// ローカルよう
->>>>>>> pages/index
 const routes = [
   {
     path: eccPath,
     name: 'Home',
     component: Home,
-    meta: {title: '石丸大貴 - ポートフォリオサイト'},
+    meta: {title: '石丸大貴 - ポートフォリオサイト'}
   },
   {
     path: eccPath+'fysi-detail/',
@@ -128,7 +65,7 @@ const routes = [
   {
     path: eccPath+'fysi-detail',
     name: 'fysi-detail',
-    component: Portfoliov2Detail
+    component: Portfoliov2Detail,
   },
   {
     path: eccPath+'tuiless-detail',
@@ -136,6 +73,7 @@ const routes = [
     component: TuilessDetail,
   },
 ]
+
 // ローカルよう
 // const routes = [
 //   {
@@ -196,13 +134,6 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
 
-  // scrollBehavior (to, from, savedPosition) {
-  //   if (savedPosition) {
-  //     return savedPosition
-  //   } else {
-  //     return { x: 0, y: 0 }
-  //   }
-  // },
   scrollBehavior () {
     return new Promise((resolve) => {
       setTimeout(() => {
