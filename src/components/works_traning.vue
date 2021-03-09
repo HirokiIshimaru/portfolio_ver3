@@ -82,7 +82,7 @@
                 <h2 class="works__content__catch-copy">Vue.jsを使ってじゃんけんゲームを作成しました</h2>
                 <div class="works__content__skill">
                     <p class="works__content__skill__icon">Skills</p>
-                    <p class="works__content__skill__list">HTML5 / SCSS / JavaScript</p>
+                    <p class="works__content__skill__list">Vue.js</p>
                 </div>
                 <div class="works__content__link">
                     <a href="https://github.com/HirokiIshimaru/janken-game" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a>
