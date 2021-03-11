@@ -1,7 +1,7 @@
 <template>
   <div class="detail">
     <h1 class="detail__ttl">Mule</h1>
-    <div class="detail__link"><a href="http://click.ecc.ac.jp/ecc/hisimaru/works/mule_web/dist/" target="blank">This Site <span></span></a></div>
+    <div class="detail__link"><a href="http://click.ecc.ac.jp/ecc/hisimaru/works/mule/" target="blank">This Site <span></span></a></div>
     <div class="detail__description">
         <h2>Concept</h2>
         <p>音楽教室で音楽を習いたいと思っているけども仕事があり、なかなか音楽教室に通えない、<br>

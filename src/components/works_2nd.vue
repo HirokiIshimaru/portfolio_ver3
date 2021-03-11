@@ -52,7 +52,7 @@
                 </div>
                 <div class="works__content__link">
                     <a href="https://github.com/HirokiIshimaru/Mule" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a>
-                    <a href="http://click.ecc.ac.jp/ecc/hisimaru/works/mule_web/" target="_blank" rel="noopener" class="works__content__link__btn">サイトへ</a>
+                    <a href="http://click.ecc.ac.jp/ecc/hisimaru/works/mule/" target="_blank" rel="noopener" class="works__content__link__btn">サイトへ</a>
                     <router-link to="mule-detail" class="works__content__link__btn">詳細へ</router-link>
                 </div>
             </div>
