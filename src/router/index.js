@@ -10,6 +10,7 @@ import PersonaliDetail from '@/components/detail/personali_detail.vue'
 import Portfoliov1Detail from '@/components/detail/portfolio-v1_detail.vue'
 import Portfoliov2Detail from '@/components/detail/portfolio-v2_detail.vue'
 import TuilessDetail from '@/components/detail/tuiless_detail.vue'
+import CrapeDetail from '@/components/detail/crape_detail.vue'
 
 Vue.use(VueRouter)
 
@@ -72,6 +73,11 @@ const routes = [
     name: 'tuiless-detail',
     component: TuilessDetail,
   },
+  {
+    path: eccPath+'crape-detail',
+    name: 'crape-detail',
+    component: CrapeDetail,
+  },
 ]
 
 // ローカルよう
@@ -126,6 +132,11 @@ const routes = [
 //     path: '/tuiless-detail',
 //     name: 'tuiless-detail',
 //     component: TuilessDetail
+//   },
+//   {
+//     path: '/crape-detail',
+//     name: 'crape-detail',
+//     component: CrapeDetail
 //   },
 // ]
 

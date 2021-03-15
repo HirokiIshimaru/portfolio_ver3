@@ -95,6 +95,25 @@
                 </div>
             </div>
         </div>
+        <div class="works">
+            <div class="works__img">
+                <img src="@/assets/crape.svg" alt="作品サムネイル">
+            </div>
+            <div class="works__content">
+                <p class="works__content__date">2021.01</p>
+                <p class="works__content__ttl">It's me crape</p>
+                <h2 class="works__content__catch-copy">クレープ屋さんから案件で作った店舗アプリケーション</h2>
+                <div class="works__content__skill">
+                    <p class="works__content__skill__icon">Skills</p>
+                    <p class="works__content__skill__list">Vue.js / SCSS</p>
+                </div>
+                <div class="works__content__link">
+                    <a href="https://github.com/HirokiIshimaru/crapeApp" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a>
+                    <a href="http://click.ecc.ac.jp/ecc/hisimaru/works/crapeApp/" target="_blank" rel="noopener" class="works__content__link__btn">サイトへ</a>
+                    <router-link to="crape-detail" class="works__content__link__btn">詳細へ</router-link>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 

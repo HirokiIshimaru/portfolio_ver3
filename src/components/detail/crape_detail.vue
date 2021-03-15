@@ -1,40 +1,40 @@
 <template>
   <div class="detail">
-    <h1 class="detail__ttl">Mule</h1>
-    <div class="detail__link"><a href="http://click.ecc.ac.jp/ecc/hisimaru/works/mule/" target="blank">This Site <span></span></a></div>
+    <h1 class="detail__ttl">It's me crape</h1>
+    <div class="detail__link"><a href="http://click.ecc.ac.jp/ecc/hisimaru/works/crapeApp/" target="blank">This Site <span></span></a></div>
     <div class="detail__description">
         <h2>Concept</h2>
-        <p>音楽教室で音楽を習いたいと思っているけども仕事があり、なかなか音楽教室に通えない、<br>
-          仕事終わりなどのスキマ時間に教えてもらいプロに近づけるサービス</p>
+        <p>若者、ファミリー層がターゲットのクレープ屋のアプリケーション<br>
+            幅広い若い層かつクライアントの要望に沿ったデザインです。</p>
     </div> <!-- detail__description -->
     <div class="detail__description">
       <h2>Motivation</h2>
-      <p>Vue.js学習後はじめてVue.jsとVueRouterを使ったSPAのアプリケーションを作成しました。<br>
-        はじめてVue.jsを使った制作だったので手こずりましたが制作してとても勉強になった作品です。</p>
+      <p>2年の後期に授業を通じてクレープ屋のアプリケーションを作る案件に携わった作品です。<br>
+          SPAのアプリケーションにしたいと考えVue.jsを導入して作りました。</p>
     </div> <!-- detail__consept -->
     <div class="detail__productDetail">
       <ul class="detail__productDetail__child01">
         <li>
           <p class="detail__productDetail__child01__enfont">Production</p>
-          <p>個人制作</p>
+          <p>グループ制作</p>
         </li>
         <li>
           <p class="detail__productDetail__child01__enfont">Position</p>
-          <p>企画/デザイン/コーディング</p>
+          <p>企画/コーディング</p>
         </li>
       </ul> <!-- detail__productDetail__child01 -->
       <ul class="detail__productDetail__child02">
         <li>
           <p>Use time</p>
-          <p>60時間</p>
+          <p>30時間</p>
         </li>
         <li>
           <p>Tool</p>
-          <p>Photoshop/XD/<br/>Vue.js</p>
+          <p>Vue.js/SCSS</p>
         </li>
       </ul> <!-- detail__productDetail__child02 -->
     </div> <!-- detail__productDetail -->
-     <div class="detail__button"><a href="https://github.com/HirokiIshimaru/Mule" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a></div>
+    <div class="detail__button"><a href="https://github.com/HirokiIshimaru/crapeApp" class="works__content__link__btn" target="_blank" rel="noopener">Githubへ</a></div>
     <div class="detail__button"><router-link to="./">ホームへ戻る</router-link></div>
     <footer><p class="copyright">&copy; 2021 hirokiishimaru</p></footer>
   </div> <!-- detail -->
@@ -54,7 +54,7 @@ h1,h2,h3, p, a, li, button{
 }
 
 .detail__link{
-  background-image: url('../../assets/mule_detail.jpg');
+  background-image: url('../../assets/crape_detail.jpg');
   background-size: cover;
 }
 </style>
