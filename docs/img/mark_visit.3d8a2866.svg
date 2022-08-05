@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 96 96" style="enable-background:new 0 0 96 96;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{opacity:0.1;enable-background:new    ;}
+	.st2{opacity:0.2;}
+	.st3{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="63.1037" y1="-0.9337" x2="92.6915" y2="-17.5031" gradientTransform="matrix(0.9909 0.1349 0.1349 -0.9909 -33.4954 26.1)">
+			<stop  offset="0" style="stop-color:#1E7DDE"/>
+			<stop  offset="1" style="stop-color:#00C4C4"/>
+		</linearGradient>
+		<path class="st0" d="M40.8,69.1L28.2,38.7c-0.8-1.9,0.8-4.1,2.9-3.7L68,39.9L45.6,69.8C44.4,71.4,41.6,71.1,40.8,69.1z"/>
+	</g>
+	<path class="st1" d="M38.4,35.9l-7.3-0.9c-2.1-0.3-3.7,1.7-2.9,3.7l12.6,30.5c0.8,2,3.5,2.3,4.8,0.7L50,64L38.4,35.9z"/>
+	<g class="st2">
+		<polygon class="st3" points="38.4,35.9 50,63.8 68,39.9 		"/>
+	</g>
+</g>
+</svg>
